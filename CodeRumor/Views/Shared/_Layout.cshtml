@@ -14,11 +14,15 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CodeRumor</title>
+    <title>Coder | Rumor - @ViewData["Title"]</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/lib/fontawesome/css/all.css" />
+        <link rel="stylesheet" href="~/css/custom.css" />
+
+        <link rel="shortcut icon" href="~/favicon_glob.png">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -28,28 +32,30 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-link navbar-fixed-top cs_navbar_bgcolor">
+        <div class="container cs_navbar_shadow">
             <div class="navbar-header">
+                
+                <!--This is the humbugger button-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <i class="fas fa-bars fa fa-spin cs_navbar_toggle_icon_size" ></i>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CodeRumor</a>
+               
+                <!--This is webpage logo-->
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <img class="inherit_size" src="~/images/CodeRumor_space.svg" />
+                </a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+
+            <div class="navbar-collapse collapse cs_navbar_bgcolor">
+                <ul class="nav navbar-nav cs_navbar_right" >
+                    <li><a class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-   
 
     <div class="container body-content">
         @RenderBody() <!--Everything get rendered in here-->
