@@ -1,6 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121614571-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121614571-1');
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CodeRumor</title>
@@ -38,10 +49,10 @@
         </div>
     </nav>
 
-    <partial name="_CookieConsentPartial" />
+   
 
     <div class="container body-content">
-        @RenderBody()
+        @RenderBody() <!--Everything get rendered in here-->
         <hr />
         <footer>
             <p>&copy; 2018 - CodeRumor</p>
@@ -70,5 +81,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
