@@ -1,0 +1,32 @@
+﻿
+body{
+    /*background-color:ghostwhite !important;*/
+}
+.inherit_size{
+    width:inherit !important; 
+    height:inherit !important;
+}
+
+.cs_navbar_right {
+    float: right;
+    padding-top: 10px;
+    font-size: 18pt;
+    color:black !important;
+}
+
+.cs_navbar_color{
+    color:black;
+}
+
+.cs_navbar_shadow{
+    height:78px;
+    box-shadow: 1px 1px 10px #efefef;
+}
+
+.cs_navbar_bgcolor {
+    background-color:white;
+}
+
+.cs_navbar_toggle_icon_size {
+    font-size:30px;
+}
