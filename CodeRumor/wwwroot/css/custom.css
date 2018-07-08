@@ -1,6 +1,6 @@
 ﻿
 body{
-    /*background-color:ghostwhite !important;*/
+    /*background-color:#efefef !important;*/
 }
 .inherit_size{
     width:inherit !important; 
@@ -20,13 +20,15 @@ body{
 
 .cs_navbar_shadow{
     height:78px;
-    box-shadow: 1px 1px 10px #efefef;
+    box-shadow: 0px 0px 10px #808080;
+    border-radius: 10px;
 }
 
 .cs_navbar_bgcolor {
     background-color:white;
 }
 
-.cs_navbar_toggle_icon_size {
-    font-size:30px;
+.cs_navbar_size {
+    font-size:18pt;
+    display:inline;
 }

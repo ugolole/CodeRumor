@@ -31,7 +31,10 @@
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+              asp-fallback-test-class="sr-only" 
+              asp-fallback-test-property="position" 
+              asp-fallback-test-value="absolute" />
+        
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
 
         <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
@@ -43,13 +46,14 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-link navbar-fixed-top cs_navbar_bgcolor">
-        <div class="container cs_navbar_shadow">
+    <nav class="navbar navbar-link navbar-fixed-top cs_navbar_bgcolor ">
+        <div class="container cs_navbar_shadow cs_navbar_bgcolor">
             <div class="navbar-header">
                 
                 <!--This is the humbugger button-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="fas fa-bars fa fa-spin cs_navbar_toggle_icon_size" ></i>
+                    <i class="fas fa-bars fa fa-spin " style="font-size:20px;" ></i>
+                    <p class="cs_navbar_size">Menu</p>
                 </button>
                
                 <!--This is webpage logo-->
