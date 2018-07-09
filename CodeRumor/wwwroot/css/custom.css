@@ -28,7 +28,7 @@
 
 .cs_navbar_hide {
     top: 0;
-    transition: top 0.3s;
+    transition: top 0.5s;
 }
 
 .cs_navbar_size {
@@ -93,6 +93,15 @@
     margin-right: 10px;
 }
 
+.cs_image_style {
+    position: relative;
+    top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 2px solid black
+}
+
 .cs_shadow {
     box-shadow: 0px 0px 5px #808080;
     border-radius: 2px;
@@ -111,10 +120,7 @@
 
     .cs_skills_content {
         width: 100% !important;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin:10px 0px 10px 0px;
     }
     
 }

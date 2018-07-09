@@ -13,10 +13,12 @@
     </script>
 
     <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coder | Rumor - @ViewData["Title"]</title>
 
     <environment include="Development">
+        <link rel="stylesheet" type="text/css" href="~/css/size.css" />
         <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="~/css/site.css" />
         <link rel="stylesheet" type="text/css" href="~/css/custom.css" />
@@ -31,10 +33,11 @@
               asp-fallback-test-class="sr-only"
               asp-fallback-test-property="position"
               asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" type="text/css" href="~/css/size.css" asp-append-version="true" />
         <link rel="stylesheet" type="text/css" href="~/css/site.min.css" asp-append-version="true" />
         <link rel="stylesheet" type="text/css" href="~/css/custom.css" asp-append-version="true" />
         <link rel="stylesheet" type="text/css" href="~/css/spacing.css" asp-append-version="true" />
-        <link rel="shortcut icon"  href="~/favicon_glob.png" asp-append-version="true" />
+        <link rel="shortcut icon" href="~/favicon_glob.png" asp-append-version="true" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true">
 
     </environment>
@@ -72,29 +75,25 @@
 
         <footer class="cs_padX20">
             <p>&copy; 2018 - CodeRumor</p>
-            @*<div class="cs_padY20 text-center">
-                <p class="cs_homepage_info text-info">Please feel free to look at my online activity below!!!</p>
-            </div>*@
-
-
+         
             <div class="text-center ">
                 <a target="_blank" class="cs_find_button "
                    href="https://github.com/ugolole">
-                    <img style="width:50px; height:50px;"src="~/images/githubIcon.png"/>
+                    <img class="cs_50" src="~/images/github.svg"/>
                 </a>
                 <a target="_blank" class="cs_find_button "
                    href="https://www.linkedin.com/in/ugololeivanb381215b/">
-                    <img style="width:50px; height:50px;" src="~/images/linkedinIcon.png" />
+                    <img class="cs_50" src="~/images/linkedIn.svg" />
 
                 </a>
                 <a class="cs_find_button "
                    href="mailto:ugololeivan@yahoo.com?subject=hey,Ivan!!">
-                    <img style="width:50px; height:50px;" src="~/images/emailIcon.png" />
+                    <img class="cs_50" src="~/images/email.svg" />
 
                 </a>
                 <a target="_blank" class="cs_find_button "
                    href="https://twitter.com/UgololeIvan">
-                    <img style="width:50px; height:50px;" src="~/images/twitterIcon.png" />
+                    <img class="cs_50" src="~/images/twitter.svg" />
 
                 </a>
             </div>
@@ -104,6 +103,7 @@
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/custom.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
@@ -120,6 +120,7 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/custom.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)
