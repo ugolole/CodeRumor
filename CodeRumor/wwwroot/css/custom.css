@@ -1,7 +1,5 @@
 ﻿
-body{
-    /*background-color:#efefef !important;*/
-}
+
 .inherit_size{
     width:inherit !important; 
     height:inherit !important;
@@ -28,7 +26,115 @@ body{
     background-color:white;
 }
 
+.cs_navbar_hide {
+    top: 0;
+    transition: top 0.5s;
+}
+
 .cs_navbar_size {
     font-size:18pt;
     display:inline;
+}
+
+.cs_container_margin{
+    margin-top:70px;
+}
+
+.cs_homepage_info{
+    font-family:Arial;
+    font-size:15pt;
+}
+
+.cs_body_look{
+    border-radius: 30px;
+    border: 2px black solid;
+}
+
+.cs_find_button {
+    width: 50px !important;
+    height: 50px !important;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cs_large{
+    font-size:70pt;
+}
+
+.cs_skills_content {
+    width: 300px ;
+    height: 300px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cs_profile_content_pic {
+    width: 200px;
+    height: 200px;
+    vertical-align:top;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cs_profile_content_bio {
+    width: 500px;
+    height:200px;
+    vertical-align:top;
+    display: inline-block;
+    font-size: 13pt;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cs_image_style {
+    position: relative;
+    top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 2px solid black
+}
+
+.cs_shadow {
+    box-shadow: 0px 0px 5px #808080;
+    border-radius: 2px;
+}
+
+@media (max-width: 991px) {
+
+    .cs_large {
+        font-size: 30pt !important;
+    }
+
+    .cs_find_button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .cs_skills_content {
+        width: 100% !important;
+        margin:10px 0px 10px 0px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .cs_large {
+        font-size: 20pt !important;
+    }
+
+    .cs_profile_content_bio {
+        width: 100% !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
