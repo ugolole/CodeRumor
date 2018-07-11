@@ -43,7 +43,7 @@
     </environment>
 </head>
 <body>
-    <nav id="navBar" class="navbar navbar-link navbar-fixed-top cs_navbar_bgcolor cs_navbar_hide cs_navbar_shadow">
+    <nav id="navBar" class="navbar navbar-link navbar-fixed-top cs_navbar_bgcolor @*cs_navbar_hide*@ cs_navbar_shadow">
         <div class="container  cs_navbar_bgcolor">
             <div class="navbar-header">
 
@@ -55,13 +55,13 @@
 
                 <!--This is webpage logo-->
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
-                    <img class="inherit_size" src="~/images/CodeRumor_space.svg" />
+                    <img  class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />
                 </a>
             </div>
 
             <div class="navbar-collapse collapse cs_navbar_bgcolor">
                 <ul class="nav navbar-nav cs_navbar_right">
-                    <li><a id="one" class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a id="one" class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="Index">Projects</a></li>
                     <li><a id="two" class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a id="three" class="cs_navbar_color" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
@@ -69,11 +69,10 @@
         </div>
     </nav>
 
-    <div class="container-fluid body-content" style="padding:0px 0px 0px 0px; ">
+    <div class="container-fluid body-content" >
         @RenderBody() <!--Everything get rendered in here-->
-        <hr />
-
-        <footer class="cs_padX20">
+        
+        <footer class="cs_padX20 cs_padY20">
             <p>&copy; 2018 - CodeRumor</p>
          
             <div class="text-center ">
