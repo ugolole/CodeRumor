@@ -39,8 +39,9 @@
 }
 
 .cs_navbar_bgcolor {
-    background-color:white;
+    background-color: white;
 }
+
 
 .cs_navbar_hide {
     top: 0;
@@ -154,11 +155,16 @@
     font-size: 30pt;
 }
 
+.cs_a {
+    cursor:pointer;
+}
+
 .cs_shadow {
     box-shadow: 0px 0px 10px #808080;
     border-radius: 3px;
 }
 
+/*Used to display both the height and width of the individual project*/
 .cs_project_LH{
     width:430px;
     height:430px;
@@ -166,6 +172,7 @@
     vertical-align:top;
 }
 
+/*Shows a light border around elements that use this class.*/
 .cs_light_border{
     border:3px solid #808080;
 }
@@ -183,18 +190,20 @@
         margin-right: 10px;
     }
 
-    .cs_skills_content {
-        width: 100% !important;
-        margin:50px 0px 50px 0px;
-    }
+    
 
     .cs_project_LH {
         width: 80%;
     }
-    
 }
 
-@media (max-width: 700px) {
+@media (max-width: 775px){
+    .cs_shadow_slider {
+        box-shadow: 0px 0px 10px #808080;
+    }
+}
+
+@media (max-width: 650px) {
     .cs_large {
         font-size: 20pt !important;
     }
@@ -212,6 +221,11 @@
         margin-bottom: 10px;
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    .cs_skills_content {
+        width: 100% !important;
+        margin: 50px 0px 50px 0px;
     }
 
     .cs_project_LH {

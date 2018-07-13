@@ -41,8 +41,6 @@ namespace CodeRumor
                 app.UseHsts();
             }
 
-
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -50,7 +48,7 @@ namespace CodeRumor
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Projects}/{id?}");
             });
         }
 

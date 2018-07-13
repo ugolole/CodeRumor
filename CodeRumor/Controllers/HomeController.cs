@@ -10,7 +10,7 @@ namespace CodeRumor.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Projects()
         {
             return View();
         }
@@ -29,11 +29,5 @@ namespace CodeRumor.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        
     }
 }
