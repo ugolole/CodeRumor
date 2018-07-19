@@ -59,20 +59,33 @@
                 </a>
             </div>
 
-            <div class="navbar-collapse collapse cs_navbar_bgcolor cs_shadow_slider">
+            <div style="width:100%" class=" navbar-collapse collapse cs_navbar_bgcolor cs_shadow_slider">
                 <ul class="nav navbar-nav cs_navbar_right">
-                    <li><a id="one" class="cs_navbar_color" asp-area=""
+                    <li><a class="cs_navbar_color " id="one" asp-area="" 
                            asp-controller="Home" asp-action="Projects">Projects</a></li>
+
+                    <li class="dropdown-toggle">    
+                        <a class="dropdown-toggle cs_navbar_color" data-toggle="dropdown"><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-controller="Animations" asp-action="AnimationMain">Animation</a></li>
+                            <li><a href="#">Android Projects</a></li>
+                            <li><a href="#">C# Projects</a></li>
+                            <li><a href="#">Java Projects</a></li>
+                        </ul>
+                    </li>
+
                     <li><a id="two" class="cs_navbar_color" asp-area=""
                            asp-controller="Home" asp-action="About">About</a></li>
+
                     <li><a id="three" class="cs_navbar_color" asp-area="" 
                            asp-controller="Home" asp-action="Contact">Contact</a></li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid body-content" >
+    <div class="container body-content" >
         @RenderBody() <!--Everything get rendered in here-->
         
         <footer class="cs_padX20 cs_padY20">
