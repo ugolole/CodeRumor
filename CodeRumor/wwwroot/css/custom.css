@@ -31,7 +31,7 @@ body{
 }
 
 .cs_see_me{
-    border:2px solid black;
+    border:2px solid green;
     border-radius: 10px;
     vertical-align:top;
 }
@@ -83,7 +83,7 @@ body{
     border-radius: 5px;
     margin-left: 50px;
     margin-right: 50px;
-    width:430px;
+    width:70%;
 }
 
 .cs_lr_margin_override{
@@ -299,8 +299,6 @@ header {
     .cs_find_button {
         margin:10px 10px 10px 10px;
     }
-
-    
 
     .cs_project_LH {
         width: 80%;
