@@ -1,19 +1,21 @@
-﻿$(window).scroll(function () {
-    if ($(document).scrollTop() > 50) {
-        $('nav').addClass('shrink');
-        $('navSecond').addClass('shrinkSecond');
-    } else {
-        $('nav').removeClass('shrink');
-        $('navSecond').removeClass('shrinkSecond');
-    }
+﻿// A $( document ).ready() block.
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+            $('navSecond').addClass('shrinkSecond');
+        } else {
+            $('nav').removeClass('shrink');
+            $('navSecond').removeClass('shrinkSecond');
+        }
+    });
 
+    $('#learnMore').click(function () {
+        $('html,body').animate({
+            scrollTop: $('#me').offset().top
+        },
+            'slow');
+    });
 });
 
-//$('.aDivSize').click(function () {
-//    if (this.id == "home") {
-//        do your stuff here
-//        $(this.id).addClass('active');
-//        alert('me');
-//    }
-//});
 

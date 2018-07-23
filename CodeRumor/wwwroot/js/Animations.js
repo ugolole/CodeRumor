@@ -117,9 +117,6 @@ function treeClick() {
     new p5(treeSketch, 'container');
 }
 
-
-
-
 //creating a sketch object to place into p5.js this accepts a variable browser
 var ballSketch = function (browser) {
 

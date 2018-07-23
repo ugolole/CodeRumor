@@ -10,16 +10,19 @@ namespace CodeRumor.Controllers
     {
         NavigationIndicator active = new NavigationIndicator();
         
+        //Go to main page
         public IActionResult ProjectsMain()
         {
             return View(active);
         }
 
+        //open up java script based projects
         public IActionResult JavaScript()
         {
             return View(active);
         }
 
+        //open up the growing tree example
         public IActionResult JSGrowingTree()
         {
             return View(active);
