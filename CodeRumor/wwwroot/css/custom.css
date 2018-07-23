@@ -1,5 +1,7 @@
-﻿
-
+﻿/*Custome File contains important code*/
+body{
+    margin-top:0px !important;
+}
 .inherit_size{
     width:inherit !important; 
     height:inherit !important;
@@ -11,18 +13,14 @@
     font-size: 18pt;
     color:black !important;
 }
-.navbar-brand{
-    height:60px;
-}
+
 
 .cs_place {
     position:relative; 
     top: -10px;
 }
 
-.navbar-head{
-    height:30px;
-}
+
 .cs_navbar_color{
     color:black;
 }
@@ -93,8 +91,8 @@
     margin-right:0px;
 }
 
-.cs_skills_container{
-    background-color:#383636;
+.cs_skills_container {
+    background-color: #212121;
 }
 
 .cs_white{
@@ -196,6 +194,91 @@
 .cs_display_inline{
     display:inline;
 }
+
+.active{
+    color:white !important;
+    border-bottom: 2px solid white !important;
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    border-bottom: 2px solid white !important;
+}
+.hoverA:hover {
+    border-bottom: 2px solid white !important;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    border-bottom: 2px solid white !important;
+}
+
+.aDivSize{
+    height:45px;
+}
+
+header {
+    background-image: url("../images/DarkImage.svg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#nav {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+
+#nav.shrink {
+    height: 40px !important;
+    transition: all ease .5s !important;
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+}
+
+
+#navSecond {
+    height: 40px !important;
+    transition: all ease .5s !important;
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+}
+
+
+#navSecond.shrinkSecond {
+    height: 40px !important;
+    transition: all ease .5s !important;
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+}
+
+@media (max-width: 769px) {
+    #bs-navbar-collapse-1 {
+        background-color: black;
+        opacity: 0.9;
+        filter: alpha(opacity=50) !important; /*Change background to black on scroll*/
+    }
+
+    #nav {
+        height: 40px !important;
+        transition: all ease .5s !important;
+        background-color: black;
+        opacity: 0.8;
+        filter: alpha(opacity=50) !important; /* Change background to black on scrolls*/ 
+    }
+
+    #navSecond.shrinkSecond {
+        height: 40px !important;
+        transition: all ease .5s !important;
+        background-color: black;
+        opacity: 0.8;
+        filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+    }
+}
+
 
 @media (max-width: 991px) {
 

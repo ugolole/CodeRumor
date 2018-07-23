@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace CodeRumor.Models
 {
-    public class Product
+    public  class NavigationIndicator
     {
+        public  string Active { get; set; } = "not";
     }
 }

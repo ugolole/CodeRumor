@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@model CodeRumor.Models.NavigationIndicator
+<!DOCTYPE html>
 <html>
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121614571-1"></script>
     <script>
@@ -33,68 +33,55 @@
               asp-fallback-test-class="sr-only"
               asp-fallback-test-property="position"
               asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" type="text/css" href="~/css/size.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/size.min.css" asp-append-version="true" />
         <link rel="stylesheet" type="text/css" href="~/css/site.min.css" asp-append-version="true" />
-        <link rel="stylesheet" type="text/css" href="~/css/custom.css" asp-append-version="true" />
-        <link rel="stylesheet" type="text/css" href="~/css/spacing.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/custom.min.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/spacing.min.css" asp-append-version="true" />
         <link rel="shortcut icon" href="~/favicon_glob.png" asp-append-version="true" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true">
 
     </environment>
 </head>
 <body>
-    <nav id="navBar" class="navbar navbar-link navbar-fixed-top cs_navbar_bgcolor cs_navbar_shadow">
-        <div class="container  cs_navbar_bgcolor">
+    <nav id="navSecond" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!--This is the humbugger button-->
             <div class="navbar-header">
-
-                <!--This is the humbugger button-->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="fas fa-bars fa fa-spin " style="font-size:20px;"></i>
-                    <p class="cs_navbar_size">Menu</p>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-
                 <!--This is webpage logo-->
-                <a asp-area="" asp-controller="Home" asp-action="Projects" class="navbar-brand">
-                    <img  class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />
+                <a class="aDivSize navbar-brand @Model.Active" asp-area="" asp-controller="Home" asp-action="HomeMain">
+                    [CODE] rumor
+                    @*<img class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />*@
                 </a>
             </div>
 
-            <div style="width:100%" class=" navbar-collapse collapse cs_navbar_bgcolor cs_shadow_slider">
-                <ul class="nav navbar-nav cs_navbar_right">
-                    <li><a class="cs_navbar_color " id="one" asp-area="" 
-                           asp-controller="Home" asp-action="Projects">Projects</a></li>
-
-                    <li class="dropdown-toggle">    
-                        <a class="dropdown-toggle cs_navbar_color" data-toggle="dropdown"><span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a asp-controller="Animations" asp-action="AnimationMain">Animation</a></li>
-                            <li><a href="#">Android Projects</a></li>
-                            <li><a href="#">C# Projects</a></li>
-                            <li><a href="#">Java Projects</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a id="two" class="cs_navbar_color" asp-area=""
-                           asp-controller="Home" asp-action="About">About</a></li>
-
-                    <li><a id="three" class="cs_navbar_color" asp-area="" 
-                           asp-controller="Home" asp-action="Contact">Contact</a></li>
+            <div class=" navbar-collapse collapse " id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="aDivSize" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a></li>
+                    <li><a class="aDivSize active" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a></li>
+                    <li><a class="aDivSize" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a></li>
 
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container body-content" >
+    <div class="container body-content">
         @RenderBody() <!--Everything get rendered in here-->
-        
+
         <footer class="cs_padX20 cs_padY20">
             <p>&copy; 2018 - CodeRumor</p>
-         
+
             <div class="text-center ">
                 <a target="_blank" class="cs_find_button "
                    href="https://github.com/ugolole">
-                    <img class="cs_50" src="~/images/github.svg"/>
+                    <img class="cs_50" src="~/images/github.svg" />
                 </a>
                 <a target="_blank" class="cs_find_button "
                    href="https://www.linkedin.com/in/ugololeivanb381215b/">
@@ -135,7 +122,7 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
-        <script src="~/js/custom.js" asp-append-version="true"></script>
+        <script src="~/js/custom.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

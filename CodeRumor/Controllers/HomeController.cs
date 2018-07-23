@@ -10,24 +10,11 @@ namespace CodeRumor.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Projects()
+        public IActionResult HomeMain()
         {
-            return View();
+            NavigationIndicator home = new NavigationIndicator();
+            return View(home); //passing an object that will active a class called active.
         }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
+    
     }
 }

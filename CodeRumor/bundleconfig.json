@@ -1,0 +1,56 @@
+[
+  {
+    "outputFileName": "wwwroot/css/custom.min.css",
+    "inputFiles": [
+      "wwwroot/css/custom.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Animations.min.js",
+    "inputFiles": [
+      "wwwroot/js/Animations.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/custom.min.js",
+    "inputFiles": [
+      "wwwroot/js/custom.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/size.min.css",
+    "inputFiles": [
+      "wwwroot/css/size.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/spacing.min.css",
+    "inputFiles": [
+      "wwwroot/css/spacing.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/p5/p5.min.js",
+    "inputFiles": [
+      "wwwroot/lib/p5/p5.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/p5/p5.dom.min.js",
+    "inputFiles": [
+      "wwwroot/lib/p5/p5.dom.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/p5/p5.sound.min.js",
+    "inputFiles": [
+      "wwwroot/lib/p5/p5.sound.js"
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+﻿@model CodeRumor.Models.NavigationIndicator
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121614571-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121614571-1');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coder | Rumor - @ViewData["Title"]</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" type="text/css" href="~/css/size.css" />
+        <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="~/css/spacing.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="~/favicon_glob.png">
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" type="text/css" href="~/css/size.min.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/custom.min.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="~/css/spacing.min.css" asp-append-version="true" />
+        <link rel="shortcut icon" href="~/favicon_glob.png" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true">
+
+    </environment>
+</head>
+<body>
+    <nav id="navSecond" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!--This is the humbugger button-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--This is webpage logo-->
+                <a class="aDivSize navbar-brand @Model.Active" asp-area="" asp-controller="Home" asp-action="HomeMain">
+                    [CODE] rumor
+                    @*<img class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />*@
+                </a>
+            </div>
+
+            <div class=" navbar-collapse collapse " id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="aDivSize active" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a></li>
+                    <li><a class="aDivSize" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a></li>
+                    <li><a class="aDivSize" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody() <!--Everything get rendered in here-->
+
+        <footer class="cs_padX20 cs_padY20">
+            <p>&copy; 2018 - CodeRumor</p>
+
+            <div class="text-center ">
+                <a target="_blank" class="cs_find_button "
+                   href="https://github.com/ugolole">
+                    <img class="cs_50" src="~/images/github.svg" />
+                </a>
+                <a target="_blank" class="cs_find_button "
+                   href="https://www.linkedin.com/in/ugololeivanb381215b/">
+                    <img class="cs_50" src="~/images/linkedIn.svg" />
+
+                </a>
+                <a class="cs_find_button "
+                   href="mailto:ugololeivan@yahoo.com?subject=hey,Ivan!!">
+                    <img class="cs_50" src="~/images/email.svg" />
+
+                </a>
+                <a target="_blank" class="cs_find_button "
+                   href="https://twitter.com/UgololeIvan">
+                    <img class="cs_50" src="~/images/twitter.svg" />
+
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/custom.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/custom.min.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

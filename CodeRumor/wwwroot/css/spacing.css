@@ -28,6 +28,8 @@
     padding-bottom: 60px;
 }
 
+
+
 .cs_padX0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -109,4 +111,24 @@
 .cs_magY60 {
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.cs_magY70 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.cs_magY80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.cs_magY90 {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.cs_magY100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

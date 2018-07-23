@@ -48,7 +48,7 @@ namespace CodeRumor
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Projects}/{id?}");
+                    template: "{controller=Home}/{action=HomeMain}/{id?}");
             });
         }
 
