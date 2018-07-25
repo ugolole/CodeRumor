@@ -98,7 +98,12 @@ body{
 .cs_white{
     color:white !important;
 }
-
+.cs_blue{
+    color:deepskyblue !important;
+}
+.cs_bold {
+    font-weight: 700;
+}
 .cs_profile_content_pic {
     width: 200px;
     height: 200px;
@@ -265,6 +270,76 @@ header {
     filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
 }
 
+.vertical-menu {
+    background-color: #262626;
+    position: fixed;
+    overflow: auto;
+    height: calc(100% - 50px);
+    width: 300px;
+}
+.vertical-menu a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    width: 130px;
+    height: 40px;
+}
+
+.vertical-menu a:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+
+}
+
+.vertical-menu a.active {
+    color: white;
+    font-weight: bold;
+}
+
+        
+.cs_white {
+    color: white;
+}
+
+.no_style_li {
+    list-style: none;
+}
+
+.position {
+    display: inline;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: white;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.documentationContent {
+    position: relative;
+    left: 350px;
+    width: calc(100% - 350px);
+}
+
 @media (max-width: 769px) {
     #bs-navbar-collapse-1 {
         background-color: black;
@@ -286,6 +361,16 @@ header {
         background-color: black;
         opacity: 0.8;
         filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+    }
+
+    .vertical-menu{
+        display:none;
+    }
+
+    .documentationContent {
+        position: relative;
+        left: 15px;
+        width: 100%;
     }
 }
 
@@ -343,4 +428,5 @@ header {
     .cs_project_LH {
         width: 80%;
     }
+
 }

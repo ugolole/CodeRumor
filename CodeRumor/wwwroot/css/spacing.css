@@ -4,6 +4,8 @@
     padding-bottom: 120px;
 }
 
+
+
 .cs_padY10 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -131,4 +133,45 @@
 .cs_magY100 {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+
+
+.cs_magTY10 {
+    margin-top: 10px;
+}
+
+.cs_magTY20 {
+    margin-top: 20px;
+}
+
+.cs_magTY30 {
+    margin-top: 30px;
+}
+
+.cs_magTY40 {
+    margin-top: 40px;
+}
+
+.cs_magTY50 {
+    margin-top: 50px;
+}
+
+.cs_magTY60 {
+    margin-top: 60px;
+}
+
+.cs_magTY70 {
+    margin-top: 70px;
+}
+
+.cs_magTY80 {
+    margin-top: 80px;
+}
+
+.cs_magTY90 {
+    margin-top: 90px;
+}
+
+.cs_magTY100 {
+    margin-top: 100px;
 }
