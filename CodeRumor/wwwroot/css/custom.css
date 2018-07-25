@@ -209,6 +209,8 @@ body{
     border-bottom: 3px solid white !important;
 }
 
+
+
 .homeSouth {
     text-align: center;
     position: absolute;
@@ -277,26 +279,25 @@ header {
     height: calc(100% - 50px);
     width: 300px;
 }
-.vertical-menu a {
-    color: black;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-    width: 130px;
-    height: 40px;
-}
+    .vertical-menu a {
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        width: 130px;
+        height: 40px;
+    }
 
-.vertical-menu a:hover {
-    cursor: pointer;
-    font-weight: bolder;
-    border-bottom: 3px solid white;
+    .vertical-menu a:hover {
+        cursor: pointer;
+        font-weight: bolder;
+        border-bottom: 3px solid white;
+    }
 
-}
-
-.vertical-menu a.active {
-    color: white;
-    font-weight: bold;
-}
+    .vertical-menu a.active {
+        color: white;
+        font-weight: bold;
+    }
 
         
 .cs_white {
@@ -337,8 +338,35 @@ header {
 .documentationContent {
     position: relative;
     left: 350px;
-    width: calc(100% - 350px);
+    width: calc(100% - 350px); /*makiing the documentation content of fixed size*/
 }
+
+.dropdown-menu-center {
+    left: 50% !important;
+    right: auto !important;
+    width:80%;
+    transform: translate(-50%, 0) !important;
+}
+
+.hideWhenBig-menu{
+    display:none;
+}
+
+    .hideWhenBig-menu a {
+        width: 130px;
+    }
+
+        .hideWhenBig-menu a:hover {
+            cursor: pointer;
+            font-weight: bolder;
+            border-bottom: 3px solid black;
+        }
+
+        .hideWhenBig-menu a.activeDark {
+            cursor: pointer !important;
+            font-weight: bolder !important;
+            border-bottom: 3px solid black !important;
+        }
 
 @media (max-width: 769px) {
     #bs-navbar-collapse-1 {
@@ -363,6 +391,7 @@ header {
         filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
     }
 
+    /*When the screen size drops hide the vertical menu*/
     .vertical-menu{
         display:none;
     }
@@ -371,6 +400,11 @@ header {
         position: relative;
         left: 15px;
         width: 100%;
+    }
+
+    /*Display the second menu*/
+    .hideWhenBig-menu{
+        display: block;
     }
 }
 

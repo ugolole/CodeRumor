@@ -3,7 +3,9 @@
     Layout = "_DocumentationLayout";
 }
 
-<div id="documentContent" class="cs_magY50 ">
+<div  class="cs_magY50 ">
+
+    <!--The large screen side menu-->
     <div class="vertical-menu cs_white">
         <ul class="no_style_li">
 
@@ -35,19 +37,21 @@
     </div>
 
     <div class=" row documentationContent">
-        <div class="dropdown col-sm-12 cs_magTY20">
+
+        <!--The small screen alternative top menu-->
+        <div class="hideWhenBig-menu dropdown-menu-right col-sm-12 cs_magTY20">
             <button class="btn btn-basic cs_p15 dropdown" type="button" data-toggle="dropdown" style="width:100%; height:50px;">
                 Table of Contents <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu no_style_li">
+            <ul class="dropdown-menu dropdown-menu-center no_style_li">
 
                 <!--The heading of document menu-->
                 <li><p class=" cs_p15 cs_bold cs_magTY20 cs_magX10">OverView</p></li>
-                <li><a class=" cs_p12 ">Introduction</a></li>
+                <li><a class="dropdown-item cs_p12 activeDark">Introduction</a></li>
 
                 <!--list of programming languages -->
                 <li><p class=" cs_p15 cs_bold cs_magX10">Programming languages</p></li>
-                <li><a class=" cs_p12">C#</a></li>
+                <li><a class="dropdown-item cs_p12">C#</a></li>
                 <li><a class=" cs_p12">Java</a></li>
                 <li><a class=" cs_p12">PHP</a></li>
                 <li><a class=" cs_p12">Python</a></li>
