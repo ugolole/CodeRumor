@@ -52,5 +52,281 @@
     "inputFiles": [
       "wwwroot/lib/p5/p5.sound.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shAutoloader.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shAutoloader.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushAppleScript.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushAppleScript.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shCore.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shCore.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/XRegExp.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/XRegExp.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreEclipse.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreEclipse.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeEclipse.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeEclipse.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCore.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCore.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushJava.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushJava.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreDefault.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreDefault.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreDjango.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreDjango.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreEmacs.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreEmacs.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreFadeToGrey.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreFadeToGrey.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreMDUltra.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreMDUltra.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreMidnight.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreMidnight.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreRDark.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shCoreRDark.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeDefault.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeDefault.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeDjango.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeDjango.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeEmacs.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeEmacs.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeFadeToGrey.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeFadeToGrey.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeMDUltra.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeMDUltra.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeMidnight.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeMidnight.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeRDark.min.css",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/styles/shThemeRDark.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushAS3.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushAS3.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushBash.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushBash.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushColdFusion.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushColdFusion.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushCpp.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushCpp.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushCSharp.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushCSharp.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushCss.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushCss.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushDelphi.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushDelphi.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushDiff.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushDiff.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushErlang.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushErlang.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushGroovy.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushGroovy.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushJavaFX.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushJavaFX.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushJScript.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushJScript.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPerl.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPerl.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPhp.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPhp.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPlain.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPlain.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPowerShell.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPowerShell.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPython.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushPython.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushRuby.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushRuby.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushSass.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushSass.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushScala.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushScala.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushSql.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushSql.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushVb.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushVb.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushXml.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shBrushXml.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shLegacy.min.js",
+    "inputFiles": [
+      "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shLegacy.js"
+    ]
   }
 ]

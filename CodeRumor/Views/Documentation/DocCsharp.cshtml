@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "C# Documentation";
+    Layout = "_DocumentationLayout";
+}
+
+<div class="cs_magY50">
+    <!--The large screen side menu-->
+    <div class="vertical-menu cs_white">
+        <ul class="no_style_li">
+
+            <!--The heading of document menu-->
+            <li>
+                <a asp-controller="Documentation" asp-action="DocumentationMain"
+                   class="cs_blue cs_p15 cs_bold cs_magY20">
+                    <span>
+                        <i class="fa fa-arrow-circle-left cs_white cs_magX10"></i>
+                    </span>Back
+                </a>
+            </li>
+
+            <!--list of programming languages -->
+            <li><p class="cs_blue cs_p15 cs_bold">C# Documentation</p></li>
+            <ul class="no_style_li">
+                <li><a class="cs_white cs_p12">Understanding C#</a></li>
+                <li><a class="cs_white cs_p12">Types of Projects</a></li>
+                <li><a class="cs_white cs_p12">Console Application</a></li>
+                <li><a class="cs_white cs_p12">Python</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <!--The small screen alternative top menu-->
+    <div class=" row documentationContent">
+        <div class="hideWhenBig-menu dropdown-menu-right col-sm-12 cs_magTY20">
+            <button class="btn btn-basic cs_p15 dropdown" type="button" data-toggle="dropdown" style="width:100%; height:50px;">
+                Table of Contents <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-center no_style_li">
+
+                <!--The heading of document menu-->
+                <li><a  asp-controller="Documentation" asp-action="DocumentationMain" class=" cs_p15 cs_bold cs_magY20 cs_magX10"><span><i class="fa fa-arrow-circle-left cs_black cs_magX10"></i></span>Back</a></li>
+                <li><a class="dropdown-item cs_p12 activeDark">Understanding C#</a></li>
+
+                <!--list of programming languages -->
+                <li><a class=" cs_p12">C#</a></li>
+                <li><a class=" cs_p12">Java</a></li>
+                <li><a class=" cs_p12">PHP</a></li>
+                <li><a class=" cs_p12">Python</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!--The content of the introduction page-->
+    <div class="row documentationContent">
+
+        <div class="col-sm-12 cs_padY30 text-justify">
+            <h1><a name=""></a><strong>Understanding C#</strong></h1>
+            <h2><a name=""></a><strong>Types of projects</strong></h2>
+            <ul>
+                <li><strong>Console applications: - </strong>This runs in the windows console</li>
+                <li><strong>Windows forms application: - </strong>Allows uses to create and run applications consisting of multiple forms</li>
+            </ul>
+            <h2><a name=""></a><strong>Console Applications</strong></h2>
+            <ul>
+                <li>Console application will always have one file this file is called Program.cs</li>
+                <li>The template used in console application will provide one class program and one function main.</li>
+                <li>The functions called main is the entry point of the console application</li>
+                <li>If your console application doesn&rsquo;t have a function main you program will not run.</li>
+            </ul>
+            <h2><a name=""></a><strong>Example Code</strong></h2>
+            <pre class="brush: java">
+    /**
+     * SyntaxHighlighter
+     */
+    function foo()
+    {
+        if (counter <= 10)
+            return;
+        // it works!
+    }
+</pre>
+
+            <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+            <script type="text/javascript">
+                SyntaxHighlighter.all()
+            </script>
+        </div>
+
+    </div>
+
+    <!--Footer used by the page-->
+    <div class="row documentationContent">
+        <partial name="_FooterTagsandScripts" />
+    </div>
+
+
+</div>
+

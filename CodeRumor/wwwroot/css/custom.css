@@ -101,6 +101,9 @@ body{
 .cs_blue{
     color:deepskyblue !important;
 }
+.cs_black{
+    color:black;
+}
 .cs_bold {
     font-weight: 700;
 }
@@ -284,7 +287,7 @@ header {
         display: block;
         padding: 12px;
         text-decoration: none;
-        width: 130px;
+        width: max-content;
         height: 40px;
     }
 
@@ -353,7 +356,7 @@ header {
 }
 
     .hideWhenBig-menu a {
-        width: 130px;
+        width: max-content;
     }
 
         .hideWhenBig-menu a:hover {
