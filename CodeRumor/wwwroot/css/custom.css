@@ -104,6 +104,9 @@ body{
 .cs_black{
     color:black;
 }
+.cs_darkBackGround {
+    background-color: #212121;
+}
 .cs_bold {
     font-weight: 700;
 }
@@ -306,7 +309,11 @@ header {
 .cs_white {
     color: white;
 }
-
+.cs_positionFixed {
+    position: fixed;
+    top: 50px;
+    display: block;
+}
 .no_style_li {
     list-style: none;
 }
@@ -344,6 +351,7 @@ header {
     width: calc(100% - 350px); /*makiing the documentation content of fixed size*/
 }
 
+/*for small menu when the screen size is small*/
 .dropdown-menu-center {
     left: 50% !important;
     right: auto !important;
@@ -351,8 +359,19 @@ header {
     transform: translate(-50%, 0) !important;
 }
 
-.hideWhenBig-menu{
-    display:none;
+/*for small menu when the screen size is small*/
+.dropdown-menu{
+    padding:20px;
+}
+
+/*for small menu when the screen size is small*/
+.dropdown-menu a:hover {
+    background-color: #212121 !important;
+    border-bottom: 3px solid white !important;
+}
+
+.hideWhenBig-menu {
+    display: none;
 }
 
     .hideWhenBig-menu a {
@@ -362,7 +381,8 @@ header {
         .hideWhenBig-menu a:hover {
             cursor: pointer;
             font-weight: bolder;
-            border-bottom: 3px solid black;
+            background-color: #212121;
+            border-bottom: 3px solid white ;
         }
 
         .hideWhenBig-menu a.activeDark {
@@ -399,6 +419,7 @@ header {
         display:none;
     }
 
+    /*Used to the documentation*/
     .documentationContent {
         position: relative;
         left: 15px;

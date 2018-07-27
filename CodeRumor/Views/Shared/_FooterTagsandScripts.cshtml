@@ -45,5 +45,19 @@
     </script>
     <script src="~/js/site.min.js" asp-append-version="true"></script>
     <script src="~/js/custom.min.js" asp-append-version="true"></script>
+
+    <!-- Include required JS files with the required XRegExp.js file -->
+    <script type="text/javascript" src="~/lib/syntaxhighlighter-3.0.83/scripts/XRegExp.min.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/lib/syntaxhighlighter-3.0.83/scripts/shCore.min.js" asp-append-version="true"></script>
+
+    <!-- At least one brush, here we choose JS. You need to include a brush for every
+        language you want to highlight-->
+    <script type="text/javascript" src="~/lib/syntaxhighlighter-3.0.83/scripts/shBrushCSharp.min.js" asp-append-version="true"></script>
+
 </environment>
+
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
 

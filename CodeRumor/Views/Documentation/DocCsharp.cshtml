@@ -21,32 +21,42 @@
             <!--list of programming languages -->
             <li><p class="cs_blue cs_p15 cs_bold">C# Documentation</p></li>
             <ul class="no_style_li">
-                <li><a class="cs_white cs_p12">Understanding C#</a></li>
-                <li><a class="cs_white cs_p12">Types of Projects</a></li>
-                <li><a class="cs_white cs_p12">Console Application</a></li>
-                <li><a class="cs_white cs_p12">Python</a></li>
+                <li><a name="DOCHeader_menu1" class="cs_white cs_p12">Understanding C#</a></li>
+                <li><a name="DOCHeader_menu2" class="cs_white cs_p12">Types of Projects</a></li>
+                <li><a name="DOCHeader_menu3" class="cs_white cs_p12">Console Application</a></li>
+                <li><a name="DOCHeader_menu4" class="cs_white cs_p12">Example Code</a></li>
+                <li><a name="DOCHeader_menu5" class="cs_white cs_p12">Using Keywords</a></li>
+                <li><a name="DOCHeader_menu6" class="cs_white cs_p12">Running your application</a></li>
+                <li><a name="DOCHeader_menu7" class="cs_white cs_p12">Functions of a program</a></li>
+                <li><a name="DOCHeader_menu8" class="cs_white cs_p12">Performing Input</a></li>
+
             </ul>
 
         </ul>
     </div>
 
     <!--The small screen alternative top menu-->
-    <div class=" row documentationContent">
-        <div class="hideWhenBig-menu dropdown-menu-right col-sm-12 cs_magTY20">
-            <button class="btn btn-basic cs_p15 dropdown" type="button" data-toggle="dropdown" style="width:100%; height:50px;">
+    <div class=" row documentationContent ">
+        <div class="hideWhenBig-menu dropdown-menu-right  col-sm-12 cs_magTY20" >
+            <button class="btn btn-basic cs_p15 dropdown"  type="button" data-toggle="dropdown" style="width:100%; height:50px;">
                 Table of Contents <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu dropdown-menu-center no_style_li">
+            <ul class="dropdown-menu dropdown-menu-center no_style_li cs_darkBackGround">
 
                 <!--The heading of document menu-->
-                <li><a  asp-controller="Documentation" asp-action="DocumentationMain" class=" cs_p15 cs_bold cs_magY20 cs_magX10"><span><i class="fa fa-arrow-circle-left cs_black cs_magX10"></i></span>Back</a></li>
-                <li><a class="dropdown-item cs_p12 activeDark">Understanding C#</a></li>
+                <li><a asp-controller="Documentation" asp-action="DocumentationMain" class=" cs_blue cs_p15 cs_bold cs_magY20 cs_magX10"><span><i class="fa fa-arrow-circle-left cs_white cs_magX10"></i></span>Back</a></li>
+                <li><p class="cs_blue cs_p15 cs_magX10 cs_bold">C# Documentation</p></li>
 
-                <!--list of programming languages -->
-                <li><a class=" cs_p12">C#</a></li>
-                <li><a class=" cs_p12">Java</a></li>
-                <li><a class=" cs_p12">PHP</a></li>
-                <li><a class=" cs_p12">Python</a></li>
+                <!--list of topics int the document -->
+                <li><a name="DOCHeader_menu1" class="cs_white cs_p12">Understanding C#</a></li>
+                <li><a name="DOCHeader_menu2" class="cs_white cs_p12">Types of Projects</a></li>
+                <li><a name="DOCHeader_menu3" class="cs_white cs_p12">Console Application</a></li>
+                <li><a name="DOCHeader_menu4" class="cs_white cs_p12">Example Code</a></li>
+
+                <li><a name="DOCHeader_menu5" class="cs_white cs_p12">Using Keywords</a></li>
+                <li><a name="DOCHeader_menu6" class="cs_white cs_p12">Running your application</a></li>
+                <li><a name="DOCHeader_menu7" class="cs_white cs_p12">Functions of a program</a></li>
+                <li><a name="DOCHeader_menu8" class="cs_white cs_p12">Performing Input</a></li>
 
             </ul>
         </div>
@@ -56,36 +66,106 @@
     <div class="row documentationContent">
 
         <div class="col-sm-12 cs_padY30 text-justify">
-            <h1><a name=""></a><strong>Understanding C#</strong></h1>
-            <h2><a name=""></a><strong>Types of projects</strong></h2>
+            <h1><a name="DOCHeader1"></a><strong>Understanding C#</strong></h1>
+            <h3><a name="DOCHeader2"></a><strong>Types of projects</strong></h3>
             <ul>
                 <li><strong>Console applications: - </strong>This runs in the windows console</li>
                 <li><strong>Windows forms application: - </strong>Allows uses to create and run applications consisting of multiple forms</li>
             </ul>
-            <h2><a name=""></a><strong>Console Applications</strong></h2>
+            <h3><a name="DOCHeader3"></a><strong>Console Applications</strong></h3>
             <ul>
                 <li>Console application will always have one file this file is called Program.cs</li>
                 <li>The template used in console application will provide one class program and one function main.</li>
                 <li>The functions called main is the entry point of the console application</li>
                 <li>If your console application doesn&rsquo;t have a function main you program will not run.</li>
             </ul>
-            <h2><a name=""></a><strong>Example Code</strong></h2>
-            <pre class="brush: java">
-    /**
-     * SyntaxHighlighter
-     */
-    function foo()
+            <h3><a name="DOCHeader4"></a><strong>Example Code</strong></h3>
+
+            <pre class="brush: csharp">
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
     {
-        if (counter <= 10)
-            return;
-        // it works!
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
     }
+}
+</pre>
+            <h3><a name="DOCHeader5"></a><strong>Using Keywords</strong></h3>
+            <ul>
+                <li>Because we cannot write everything by our selves</li>
+                <li>We can import some libraries that where already written by some other programmers in C#.</li>
+                <li>We can have access to these libraries using the keyword &ldquo;using System&rdquo;.</li>
+            </ul>
+            <h3><a name="DOCHeader6"></a><strong>Running your application</strong></h3>
+            <ul>
+                <li>Running the application can be archived by pressing the Debug/Run</li>
+                <li>This will cause the application to run in the windows console.</li>
+                <li>The application will show every thing that is shown in the <strong>&ldquo;Console. WriteLine(&ldquo;</strong>stuff<strong>&rdquo;)&rdquo;</strong></li>
+                <li>The <strong>WriteLine</strong> is used to output the statements.</li>
+            </ul>
+            <h3><a name="DOCHeader7"></a><strong>Functions of a program</strong></h3>
+            <ul>
+                <li>
+                    All programs have 3 important functions, these functions include;
+                    <ul>
+                        <li><strong>Input: </strong>This is a process when a program gets information from the outside world</li>
+                        <li><strong>Processing:</strong> This is a situation when a program decides what to do with this information.</li>
+                        <li><strong>Output: </strong>This is a situation when a program decides to produce the result of the processing or program shows the user what it has done with this information.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3><a name="DOCHeader8"></a><strong>Performing input</strong></h3>
+            <ul>
+                <li>There is a console function for inputting date and this is achieved with the <strong>ReadLine().</strong></li>
+            </ul>
+            <pre class="brush: csharp">
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ReadLine();
+            Console.WriteLine("Hello world");
+        }
+    }
+}
+</pre>
+            <ul>
+                <li>
+                    Running the above statements will cause the program to wait for input. The problem with this approach is that;
+                    <ul>
+                        <li>We don&rsquo;t know what we are inputting</li>
+                        <li>We don&rsquo;t&rsquo; know how to get what we are inputting.</li>
+                    </ul>
+                </li>
+                <li>A solution to this problem can be seen below.</li>
+            </ul>
+            <pre class="brush: csharp">
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter something");
+            var x = Console.ReadLine();
+            Console.WriteLine("You entered {0}", x);
+        }
+    }
+}
 </pre>
 
-            <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
-            <script type="text/javascript">
-                SyntaxHighlighter.all()
-            </script>
+            
         </div>
 
     </div>
