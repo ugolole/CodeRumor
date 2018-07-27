@@ -1,5 +1,6 @@
 .syntaxhighlighter {
-  background-color: white !important;
+    background-color: white !important;
+    padding: 1px !important;
 }
 .syntaxhighlighter .line.alt1 {
   background-color: white !important;
