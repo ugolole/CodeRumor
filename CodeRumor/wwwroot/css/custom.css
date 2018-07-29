@@ -291,6 +291,10 @@ header {
         padding: 12px;
         text-decoration: none;
         width: max-content;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: -o-max-content;
+        width: -ms-max-content;
         height: 40px;
     }
 
@@ -376,6 +380,10 @@ header {
 
     .hideWhenBig-menu a {
         width: max-content;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: -o-max-content;
+        width: -ms-max-content;
     }
 
         .hideWhenBig-menu a:hover {

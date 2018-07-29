@@ -44,10 +44,14 @@
 .syntaxhighlighter.collapsed .toolbar a:hover {
   color: #aa7700 !important;
 }
+/*Changes to this sector of the code is done to remove the question that appears
+    While the syntax highlighter code is rendered.
+*/
 .syntaxhighlighter .toolbar {
-  color: #a0a0a0 !important;
+  /*color: #a0a0a0 !important;
   background: #d4d0c8 !important;
-  border: none !important;
+  border: none !important;*/
+  display: none;
 }
 .syntaxhighlighter .toolbar a {
   color: #a0a0a0 !important;

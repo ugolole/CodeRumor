@@ -8,7 +8,7 @@ namespace CodeRumor.Controllers
 {
     public class ProjectsController : Controller
     {
-        NavigationIndicator active = new NavigationIndicator();
+        private readonly NavigationIndicator active = new NavigationIndicator();
         
         //Go to main page
         public IActionResult ProjectsMain()
