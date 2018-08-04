@@ -18,7 +18,7 @@ namespace CodeRumor.Controllers
         public IActionResult DocCsharp()
         {
             NavigationIndicator active = new NavigationIndicator();
-            return View(active);
+            return View("/Views/Documentation/CSharp/DocCsharp.cshtml",active);
         }
     }
 }
