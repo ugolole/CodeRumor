@@ -98,7 +98,18 @@ body{
 .cs_white{
     color:white !important;
 }
-
+.cs_blue{
+    color:deepskyblue !important;
+}
+.cs_black{
+    color:black;
+}
+.cs_darkBackGround {
+    background-color: #212121;
+}
+.cs_bold {
+    font-weight: 700;
+}
 .cs_profile_content_pic {
     width: 200px;
     height: 200px;
@@ -211,6 +222,14 @@ body{
     top: calc(100% - 120px);
 }
 
+
+.homeSouth {
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 54px);
+    top: calc(100% - 120px);
+}
+
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     border-bottom: 2px solid white !important;
 }
@@ -265,6 +284,127 @@ header {
     filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
 }
 
+.vertical-menu {
+    background-color: #262626;
+    position: fixed;
+    overflow: auto;
+    height: calc(100% - 50px);
+    width: 300px;
+}
+    .vertical-menu a {
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        width: max-content;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: -o-max-content;
+        width: -ms-max-content;
+        height: 40px;
+    }
+
+    .vertical-menu a:hover {
+        cursor: pointer;
+        font-weight: bolder;
+        border-bottom: 3px solid white;
+    }
+
+    .vertical-menu a.active {
+        color: white;
+        font-weight: bold;
+    }
+
+        
+.cs_white {
+    color: white;
+}
+.cs_positionFixed {
+    position: fixed;
+    top: 50px;
+    display: block;
+}
+.no_style_li {
+    list-style: none;
+}
+
+.position {
+    display: inline;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: white;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+.documentationContent {
+    position: relative;
+    left: 350px;
+    width: calc(100% - 350px); /*makiing the documentation content of fixed size*/
+}
+
+/*for small menu when the screen size is small*/
+.dropdown-menu-center {
+    left: 50% !important;
+    right: auto !important;
+    width:80%;
+    transform: translate(-50%, 0) !important;
+}
+
+/*for small menu when the screen size is small*/
+.dropdown-menu{
+    padding:20px;
+}
+
+/*for small menu when the screen size is small*/
+.dropdown-menu a:hover {
+    background-color: #212121 !important;
+    border-bottom: 3px solid white !important;
+}
+
+.hideWhenBig-menu {
+    display: none;
+}
+
+    .hideWhenBig-menu a {
+        width: max-content;
+        width: -moz-max-content;
+        width: -webkit-max-content;
+        width: -o-max-content;
+        width: -ms-max-content;
+    }
+
+        .hideWhenBig-menu a:hover {
+            cursor: pointer;
+            font-weight: bolder;
+            background-color: #212121;
+            border-bottom: 3px solid white ;
+        }
+
+        .hideWhenBig-menu a.activeDark {
+            cursor: pointer !important;
+            font-weight: bolder !important;
+            border-bottom: 3px solid black !important;
+        }
+
 @media (max-width: 769px) {
     #bs-navbar-collapse-1 {
         background-color: black;
@@ -286,6 +426,23 @@ header {
         background-color: black;
         opacity: 0.8;
         filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+    }
+
+    /*When the screen size drops hide the vertical menu*/
+    .vertical-menu{
+        display:none;
+    }
+
+    /*Used to the documentation*/
+    .documentationContent {
+        position: relative;
+        left: 15px;
+        width: 100%;
+    }
+
+    /*Display the second menu*/
+    .hideWhenBig-menu{
+        display: block;
     }
 }
 
@@ -343,4 +500,5 @@ header {
     .cs_project_LH {
         width: 80%;
     }
+
 }

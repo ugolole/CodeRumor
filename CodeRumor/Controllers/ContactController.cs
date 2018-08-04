@@ -8,7 +8,7 @@ namespace CodeRumor.Controllers
 {
     public class ContactController : Controller
     {
-        NavigationIndicator active = new NavigationIndicator();
+        private readonly NavigationIndicator active = new NavigationIndicator();
         public IActionResult ContactMain()
         {
             return View(active);

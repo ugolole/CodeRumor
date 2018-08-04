@@ -1,0 +1,63 @@
+﻿<footer class="cs_padX20 cs_padY20">
+    <p>&copy; 2018 - CodeRumor</p>
+
+    <div class="text-center ">
+        <a target="_blank" class="cs_find_button "
+           href="https://github.com/ugolole">
+            <img class="cs_50" src="~/images/github.svg" />
+        </a>
+
+        <a target="_blank" class="cs_find_button "
+           href="https://www.linkedin.com/in/ugololeivanb381215b/">
+            <img class="cs_50" src="~/images/linkedIn.svg" />
+        </a>
+
+        <a class="cs_find_button "
+           href="mailto:ugololeivan@yahoo.com?subject=hey,Ivan!!">
+            <img class="cs_50" src="~/images/email.svg" />
+        </a>
+
+        <a target="_blank" class="cs_find_button "
+           href="https://twitter.com/UgololeIvan">
+            <img class="cs_50" src="~/images/twitter.svg" />
+        </a>
+    </div>
+</footer>
+
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+<environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+    <script src="~/js/custom.min.js" asp-append-version="true"></script>
+
+    <!-- Include required JS files with the required XRegExp.js file -->
+    <script type="text/javascript" src="~/lib/syntaxhighlighter-3.0.83/scripts/XRegExp.min.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/lib/syntaxhighlighter-3.0.83/scripts/shCore.min.js" asp-append-version="true"></script>
+
+    <!-- At least one brush, here we choose JS. You need to include a brush for every
+        language you want to highlight-->
+    <script type="text/javascript" src="~/lib/syntaxhighlighter-3.0.83/scripts/shBrushCSharp.min.js" asp-append-version="true"></script>
+
+</environment>
+
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+    SyntaxHighlighter.all()
+</script>
+
