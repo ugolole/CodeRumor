@@ -13,7 +13,7 @@ namespace CodeRumor.Controllers
         public IActionResult HomeMain()
         {
             NavigationIndicator home = new NavigationIndicator();
-            return View(home); //passing an object that will active a class called active.
+            return View(); //passing an object that will active a class called active.
         }
     
     }

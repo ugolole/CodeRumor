@@ -5,55 +5,33 @@
     <partial name="_HeaderTags" />
 </head>
 <body>
-    <header>
-        <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <!--This is the humbugger button-->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--This is webpage logo-->
-                    <a id="home" class="navbar-brand aDivSize active" asp-area="" asp-controller="Home" asp-action="HomeMain">
-                        [CODE] rumor
-                        @*<img class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />*@
-                    </a>
-                </div>
-
-                <div class=" navbar-collapse collapse " id="bs-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="aDivSize" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a></li>
-                        <li><a class="aDivSize" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a></li>
-                        <li><a class="aDivSize" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a></li>
-                    </ul>
-                </div>
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!--This is the humbugger button-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--This is webpage logo-->
+                <a id="home" class="navbar-brand aDivSize active" asp-area="" asp-controller="Home" asp-action="HomeMain">
+                    [CODE] rumor
+                    @*<img class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />*@
+                </a>
             </div>
-        </nav>
 
-        <!--The main index container-->
-        <div class="cs_white  cs_padY30 " style="position:relative; top:20%;">
-
-            <!--The Introducion information container-->
-            <div class="text-center">
-                <h1 class="cs_large">Hi, I'm Ivan Richard ;)</h1>
-                <p class="cs_homepage_info">
-                    Creator of CodeRumor
-                </p>
+            <div class=" navbar-collapse collapse " id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="aDivSize" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a></li>
+                    <li><a class="aDivSize" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a></li>
+                    <li><a class="aDivSize" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a></li>
+                </ul>
             </div>
         </div>
-
-        <!--learn more about the creator-->
-        <div class="text-center homeSouth">
-            <p class="cs_white ">Learn More </p>
-            <div id="learnMore" class="itemHover">
-                <i class="fa fa-angle-double-down faa-bounce" style="font-size:80px;color:white"></i>
-            </div>
-        </div>
-    </header>
+    </nav>
 
     @RenderBody() <!--Everything get rendered in here-->
 
