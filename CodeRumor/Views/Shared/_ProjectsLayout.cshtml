@@ -28,7 +28,7 @@
                     <li><a class="aDivSize" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a></li>
                     <li><a class="aDivSize active" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a></li>
                     <li><a class="aDivSize" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a></li>
-
+                    <li class="aDivSize"><a class="aDivSize" asp-area="" asp-controller="TermsOfService" asp-action="TermsOfService">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +38,11 @@
         @RenderBody() <!--Everything get rendered in here-->
     </div>
 
-    <partial name="_FooterTagsandScripts" />
+    <div class="cs_background_dark cs_bluetop_bar">
+        <div class="container">
+            <partial name="_FooterTagsandScripts" />
+        </div>
+    </div>
 
     @RenderSection("Scripts", required: false)
 </body>

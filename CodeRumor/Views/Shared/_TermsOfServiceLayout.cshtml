@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <partial name="_HeaderTags" />
+    <partial name="_HeaderTags" /> <!--This is used to load the partial header file-->
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="navSecond" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!--This is the humbugger button-->
             <div class="navbar-header">
@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!--This is webpage logo-->
-                <a id="home" class="navbar-brand aDivSize active" asp-area="" asp-controller="Home" asp-action="HomeMain">
+                <a class="aDivSize navbar-brand @Model.Active" asp-area="" asp-controller="Home" asp-action="HomeMain">
                     [CODE] rumor
                     @*<img class="inherit_size cs_place" src="~/images/CodeRumorShort.svg" />*@
                 </a>
@@ -28,7 +28,7 @@
                     <li><a class="aDivSize" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a></li>
                     <li><a class="aDivSize" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a></li>
                     <li><a class="aDivSize" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a></li>
-                    <li class="aDivSize"><a class="aDivSize" asp-area="" asp-controller="TermsOfService" asp-action="TermsOfService">Terms of Service</a></li>
+                    <li class="active aDivSize"><a class="active aDivSize" asp-area="" asp-controller="TermsOfService" asp-action="TermsOfService">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
@@ -36,16 +36,6 @@
 
     @RenderBody() <!--Everything get rendered in here-->
 
-    <div class="cs_background_dark cs_bluetop_bar">
-        <div class="container">
-            <partial name="_FooterTagsandScripts" />
-        </div>
-    </div>
-    
-
     @RenderSection("Scripts", required: false)
-
 </body>
 </html>
-
-

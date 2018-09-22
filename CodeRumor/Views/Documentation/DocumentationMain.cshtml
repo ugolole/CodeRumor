@@ -8,31 +8,8 @@
     <!--The large screen side menu-->
     <div class="vertical-menu cs_white">
         <ul class="no_style_li">
-
-            <!--The heading of document menu-->
-            <li><p class="cs_blue cs_p15 cs_bold cs_magTY20">OverView</p></li>
-            <ul class="no_style_li">
-                <li><a class="cs_white cs_p12 active">Introduction</a></li>
-            </ul>
-
-            <!--list of programming languages -->
-            <li><p class="cs_blue cs_p15 cs_bold">Programming languages</p></li>
-            <ul class="no_style_li">
-                <li><a asp-controller="Documentation" asp-action="DocCsharp" class="cs_white cs_p12">C#</a></li>
-                @*<li><a class="cs_white cs_p12">Java</a></li>
-                <li><a class="cs_white cs_p12">PHP</a></li>
-                <li><a class="cs_white cs_p12">Python</a></li>*@
-            </ul>
-
-            <!--list of web technologies -->
-            @*<li><p class="cs_blue cs_p15 cs_bold">Web Technologies</p></li>
-            <ul class="no_style_li">
-                <li><a class="cs_white cs_p12">Asp.net</a></li>
-                <li><a class="cs_white cs_p12">Angular</a></li>
-                <li><a class="cs_white cs_p12">JSP</a></li>
-                <li><a class="cs_white cs_p12">PHP</a></li>
-                <li><a class="cs_white cs_p12">NodeJS</a></li>
-            </ul>*@
+            <!--The navigation for web application -->
+            <partial name="/Views/Documentation/_nav.cshtml" />
         </ul>
     </div>
 
@@ -41,37 +18,19 @@
         <div class="hideWhenBig-menu dropdown-menu-right col-sm-12 cs_magTY20">
             <button class="btn btn-basic cs_p15 dropdown" type="button" data-toggle="dropdown" style="width:100%; height:50px;">
                 Table of Contents <span class="caret"></span>
-            </button> 
+            </button>
             <ul class="dropdown-menu dropdown-menu-center no_style_li cs_darkBackGround">
-
-                <!--The heading of document menu-->
-                <li><p class=" cs_p15 cs_bold cs_magTY20 cs_blue cs_magX10">OverView</p></li>
-                <li><a class="dropdown-item cs_p12 active cs_white">Introduction</a></li>
-
-                <!--list of programming languages -->
-                <li><p class=" cs_p15 cs_bold cs_white cs_magX10 cs_blue">Programming languages</p></li>
-                <li><a asp-controller="Documentation" asp-action="DocCsharp" class=" cs_p12 cs_white">C#</a></li>
-                @*<li><a class=" cs_p12 cs_white">Java</a></li>
-                <li><a class=" cs_p12 cs_white">PHP</a></li>
-                <li><a class=" cs_p12 cs_white">Python</a></li>*@
-
-                <!--list of web technologies -->
-                @*<li><p class=" cs_p15 cs_bold cs_blue cs_magX10">Web Technologies</p></li>
-                <li><a class=" cs_p12 cs_white" >Asp.net</a></li>
-                <li><a class=" cs_p12 cs_white">Angular</a></li>
-                <li><a class=" cs_p12 cs_white">JSP</a></li>
-                <li><a class=" cs_p12 cs_white">PHP</a></li>
-                <li><a class=" cs_p12 cs_white">NodeJS</a></li>*@
-
+                <!--The navigation for web application -->
+                <partial name="/Views/Documentation/_nav.cshtml" />
             </ul>
         </div>
     </div>
 
     <!--The content of the introduction page-->
-    <div class="row documentationContent">
+    <div class="row documentationContent cs_magTY20  cs_padX40">
 
-        <div class="col-sm-12 cs_padY30">
-            <h1>Introduction</h1>
+        <div class="col-sm-12 cs_padX40 cs_padY30 cs_border_r20 cs_shadow">
+            <h1 class="cs_h1">Introduction</h1>
             <p class="text-justify">
                 This part of the web application is designed to show case important documentation
                 that was used in creating some to the application you will see later in the projects
@@ -82,7 +41,7 @@
             </p>
 
             <h2>Overview</h2>
-            <h3>C#</h3>
+            <h3 class="cs_h3">C#</h3>
             <p class="text-justify">
                 Microsoft's most popular programming computer technology known as <strong>.Net</strong> comes with the
                 C# programming language, pronoused <strong><em>C Sharp</em></strong> and is a general purpose programming language
@@ -93,16 +52,15 @@
                 the logical flow"
             </p>
         </div>
-
-
-
     </div>
 
-    <!--Footer used by the page-->
-    <div class="row documentationContent">
-        <partial name="_FooterTagsandScripts" />
-    </div>
 </div>
+
+<!--Footer used by the page-->
+<div class="row footerContent cs_bluetop_bar">
+    <partial name="_FooterTagsandScripts" />
+</div>
+
 
 
 

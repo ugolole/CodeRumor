@@ -8,140 +8,59 @@
     <!--The large screen side menu-->
     <div class="vertical-menu cs_white">
         <ul class="no_style_li">
-            <partial name="/Views/Documentation/CSharp/_nav.cshtml" /> <!--The side menu navigation-->
+            <partial name="/Views/Documentation/CSharp/navigation/_nav.cshtml" /> <!--The side menu navigation-->
         </ul>
     </div>
 
     <!--The small screen alternative top menu-->
     <div class=" row documentationContent ">
-        <div class="hideWhenBig-menu dropdown-menu-right  col-sm-12 cs_magTY20" >
-            <button class="btn btn-basic cs_p15 dropdown"  type="button" data-toggle="dropdown" style="width:100%; height:50px;">
+        <div class="hideWhenBig-menu dropdown-menu-right  col-sm-12 cs_magTY20">
+            <button class="btn btn-basic cs_p15 dropdown" type="button" data-toggle="dropdown" style="width:100%; height:50px;">
                 Table of Contents <span class="caret"></span>
             </button>
             <ul class="dropdown-menu dropdown-menu-center no_style_li cs_darkBackGround">
-                <partial name="/Views/Documentation/CSharp/_nav.cshtml" /> <!--The side menu navigation-->
+                <partial name="/Views/Documentation/CSharp/navigation/_nav.cshtml" /> <!--The side menu navigation-->
             </ul>
         </div>
     </div>
 
     <!--The content of the introduction page-->
-    <div class="row documentationContent">
+    <div class="row documentationContent cs_magTY20  cs_padX40">
 
-        <div class="col-sm-12 cs_padY30 text-justify">
-            <h1><a name="DOCHeader1"></a><strong>Understanding C#</strong></h1>
-            <h3><a name="DOCHeader2"></a><strong>Types of projects</strong></h3>
-            <ul>
-                <li><strong>Console applications: - </strong>This runs in the windows console</li>
-                <li><strong>Windows forms application: - </strong>Allows uses to create and run applications consisting of multiple forms</li>
-            </ul>
-            <h3><a name="DOCHeader3"></a><strong>Console Applications</strong></h3>
-            <ul>
-                <li>Console application will always have one file this file is called Program.cs</li>
-                <li>The template used in console application will provide one class program and one function main.</li>
-                <li>The functions called main is the entry point of the console application</li>
-                <li>If your console application doesn&rsquo;t have a function main you program will not run.</li>
-            </ul>
-            <h3><a name="DOCHeader4"></a><strong>Example Code</strong></h3>
+        <div class="col-sm-12 cs_padY30 cs_padX40 text-justify cs_border_r20 cs_shadow">
 
-            <pre class="brush: csharp">
-using System;
+            <!--Section 1 represents understanding C# documentation-->
+            <partial name="/Views/Documentation/CSharp/content/_section1.cshtml" />
 
-namespace ConsoleApp2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-}
-</pre>
+            <!--Section 2-->
+            <partial name="/Views/Documentation/CSharp/content/_section2.cshtml" />
 
-            <h3><a name="DOCHeader5"></a><strong>Using Keywords</strong></h3>
-            <ul>
-                <li>Because we cannot write everything by our selves</li>
-                <li>We can import some libraries that where already written by some other programmers in C#.</li>
-                <li>We can have access to these libraries using the keyword &ldquo;using System&rdquo;.</li>
-            </ul>
-            <h3><a name="DOCHeader6"></a><strong>Running your application</strong></h3>
-            <ul>
-                <li>Running the application can be archived by pressing the Debug/Run</li>
-                <li>This will cause the application to run in the windows console.</li>
-                <li>The application will show every thing that is shown in the <strong>&ldquo;Console. WriteLine(&ldquo;</strong>stuff<strong>&rdquo;)&rdquo;</strong></li>
-                <li>The <strong>WriteLine</strong> is used to output the statements.</li>
-            </ul>
-            <h3><a name="DOCHeader7"></a><strong>Functions of a program</strong></h3>
-            <ul>
-                <li>
-                    All programs have 3 important functions, these functions include;
-                    <ul>
-                        <li><strong>Input: </strong>This is a process when a program gets information from the outside world</li>
-                        <li><strong>Processing:</strong> This is a situation when a program decides what to do with this information.</li>
-                        <li><strong>Output: </strong>This is a situation when a program decides to produce the result of the processing or program shows the user what it has done with this information.</li>
-                    </ul>
-                </li>
-            </ul>
-            <h3><a name="DOCHeader8"></a><strong>Performing input</strong></h3>
-            <ul>
-                <li>There is a console function for inputting date and this is achieved with the <strong>ReadLine().</strong></li>
-            </ul>
+            <!--Section 3-->
+            <partial name="/Views/Documentation/CSharp/content/_section3.cshtml" />
 
-            <pre class="brush: csharp">
-using System;
+            <!--Section 4-->
+            <partial name="/Views/Documentation/CSharp/content/_section4.cshtml" />
 
-namespace ConsoleApp2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.ReadLine();
-            Console.WriteLine("Hello world");
-        }
-    }
-}
-</pre>
+            <!--Section 5-->
+            <partial name="/Views/Documentation/CSharp/content/_section5.cshtml" />
 
-            <ul>
-                <li>
-                    Running the above statements will cause the program to wait for input. The problem with this approach is that;
-                    <ul>
-                        <li>We don&rsquo;t know what we are inputting</li>
-                        <li>We don&rsquo;t&rsquo; know how to get what we are inputting.</li>
-                    </ul>
-                </li>
-                <li>A solution to this problem can be seen below.</li>
-            </ul>
+            <!--Section 6-->
+            <partial name="/Views/Documentation/CSharp/content/_section6.cshtml" />
 
-            <pre class="brush: csharp">
-using System;
+            <!--Section 7-->
+            <partial name="/Views/Documentation/CSharp/content/_section7.cshtml" />
 
-namespace ConsoleApp2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.Write("Please enter something");
-            var x = Console.ReadLine();
-            Console.WriteLine("You entered {0}", x);
-        }
-    }
-}
-</pre>
+            <!--Section 8-->
+            <partial name="/Views/Documentation/CSharp/content/_section8.cshtml" />
 
-         
+
         </div>
 
     </div>
-
-    <!--Footer used by the page is necessary because the pages are different
-        hence the footer cannot be shared.-->
-    <div class="row documentationContent">
-        <partial name="_FooterTagsandScripts" />
-    </div>
-
-
 </div>
 
+<!--Footer used by the page is necessary because the pages are different
+        hence the footer cannot be shared.-->
+<div class="row footerContent cs_bluetop_bar">
+    <partial name="_FooterTagsandScripts" />
+</div>

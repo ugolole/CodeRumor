@@ -1,0 +1,48 @@
+﻿<h3 class="cs_h3"><a name="DOCHeader8"></a><strong>Performing input</strong></h3>
+<ul>
+    <li>There is a console function for inputting date and this is achieved with the <strong>ReadLine().</strong></li>
+</ul>
+
+<pre class="brush: csharp">
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ReadLine();
+            Console.WriteLine("Hello world");
+        }
+    }
+}
+</pre>
+
+<ul>
+    <li>
+        Running the above statements will cause the program to wait for input. The problem with this approach is that;
+        <ul>
+            <li>We don&rsquo;t know what we are inputting</li>
+            <li>We don&rsquo;t&rsquo; know how to get what we are inputting.</li>
+        </ul>
+    </li>
+    <li>A solution to this problem can be seen below.</li>
+</ul>
+
+<pre class="brush: csharp">
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter something");
+            var x = Console.ReadLine();
+            Console.WriteLine("You entered {0}", x);
+        }
+    }
+}
+</pre>

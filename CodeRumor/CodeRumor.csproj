@@ -9,4 +9,38 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Documentation\CSharp\images\" />
+    <Folder Include="Views\Documentation\NodeJS\content\" />
+    <Folder Include="Views\Documentation\NodeJS\images\" />
+    <Folder Include="Views\Documentation\NodeJS\navigation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Documentation\CSharp\content\_section5.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section6.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section7.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section8.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section4.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section3.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section2.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Documentation\CSharp\content\_section1.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
 </Project>

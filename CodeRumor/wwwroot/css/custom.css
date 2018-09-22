@@ -210,6 +210,45 @@ body{
     display:inline;
 }
 
+.cs_border_r10{
+    border-radius: 10px;
+}
+
+.cs_border_r20 {
+    border-radius: 20px;
+}
+
+.cs_border_r30 {
+    border-radius: 30px;
+}
+
+.cs_border_r40 {
+    border-radius: 40px;
+}
+
+.cs_border_r50 {
+    border-radius: 50px;
+}
+
+.cs_border_r60 {
+    border-radius: 60px;
+}
+
+.cs_h1{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.cs_h2 {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.cs_h3{
+    font-size: 15pt;
+    font-weight: bold;
+}
+
 .active {
     color: white !important;
     border-bottom: 3px solid white !important;
@@ -288,14 +327,16 @@ header {
     .vertical-menu a {
         color: black;
         display: block;
-        padding: 12px;
+        padding: 0px;
         text-decoration: none;
         width: max-content;
         width: -moz-max-content;
         width: -webkit-max-content;
         width: -o-max-content;
         width: -ms-max-content;
-        height: 40px;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left:30px;
     }
 
     .vertical-menu a:hover {
@@ -309,7 +350,10 @@ header {
         font-weight: bold;
     }
 
-        
+      
+    .dropdown-menu a{
+        margin-left:30px;
+    }
 .cs_white {
     color: white;
 }
@@ -326,6 +370,35 @@ header {
     display: inline;
 }
 
+.cs_background_dark {
+    background-color: gainsboro;
+}
+.cs_bluetop_bar {
+    border-top: #41c1f4 solid 5px;
+}
+.cs_bluebottom_bar{
+    border-bottom: #41c1f4 solid 5px; 
+}
+
+.fa-github:hover {
+    color: black !important;
+}
+
+.fa-linkedin:hover {
+    color: black !important;
+}
+
+.fa-yahoo:hover {
+    color: black !important;
+}
+
+.fa-twitter:hover {
+    color: black !important;
+}
+
+.fa-facebook:hover {
+    color: black !important;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -353,6 +426,12 @@ header {
     position: relative;
     left: 350px;
     width: calc(100% - 350px); /*makiing the documentation content of fixed size*/
+}
+
+.footerContent{
+    position: relative;
+    left: 315px;
+    width: calc(100% - 300px);
 }
 
 /*for small menu when the screen size is small*/
@@ -399,6 +478,46 @@ header {
             border-bottom: 3px solid black !important;
         }
 
+@media (max-width: 991px) {
+
+    .cs_large {
+        font-size: 30pt !important;
+    }
+
+    .cs_find_button {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .cs_project_LH {
+        width: 80%;
+    }
+
+    .cs_project_all {
+        width: 80%;
+    }
+
+    .cs_h1 {
+        font-size: 25pt;
+        font-weight: bold;
+    }
+
+    .cs_h2{
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    .cs_h3{
+        font-size:10pt;
+        font-weight:bold;
+    }
+}
+
+@media (max-width: 775px) {
+    .cs_shadow_slider {
+        box-shadow: 0px 0px 10px #808080;
+    }
+}
+
 @media (max-width: 769px) {
     #bs-navbar-collapse-1 {
         background-color: black;
@@ -434,35 +553,15 @@ header {
         width: 100%;
     }
 
+    .footerContent {
+        position: relative;
+        left: 15px;
+        width: 100%;
+    }
+
     /*Display the second menu*/
     .hideWhenBig-menu{
         display: block;
-    }
-}
-
-
-@media (max-width: 991px) {
-
-    .cs_large {
-        font-size: 30pt !important;
-    }
-
-    .cs_find_button {
-        margin:10px 10px 10px 10px;
-    }
-
-    .cs_project_LH {
-        width: 80%;
-    }
-
-    .cs_project_all {
-        width: 80%;
-    }
-}
-
-@media (max-width: 775px){
-    .cs_shadow_slider {
-        box-shadow: 0px 0px 10px #808080;
     }
 }
 
@@ -495,4 +594,21 @@ header {
         width: 80%;
     }
 
+}
+
+@media (max-width: 550px){
+    .cs_h1 {
+        font-size: 20pt !important;
+        font-weight: bold;
+    }
+
+    .cs_h2 {
+        font-size: 15pt;
+        font-weight: bold;
+    }
+
+    .cs_h3 {
+        font-size: 9pt;
+        font-weight: bold;
+    }
 }

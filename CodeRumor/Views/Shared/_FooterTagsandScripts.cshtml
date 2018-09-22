@@ -1,30 +1,79 @@
-﻿
-<!--The contents in this file should be place in the footer.-->
-<footer class="cs_padX20 cs_padY20">
-    <p>&copy; 2018 - CodeRumor</p>
+﻿<!--The contents in this file should be place in the footer.-->
+<footer class="cs_padX20 cs_padY20  cs_background_dark">
+    <p class="cs_black cs_bold">&copy; 2018 - CodeRumor</p>
+    <div class="row">
 
-    <div class="text-center ">
-        <a target="_blank" class="cs_find_button "
-           href="https://github.com/ugolole">
-            <img class="cs_50" src="~/images/github.svg" />
-        </a>
+        <div class="col-md-3 ">
+            <h4 class="cs_black cs_bold">Site basic Info</h4>
+            <p>Created in 2018</p>
+            <p>Designed to show case project and documents</p>
+            <p>Contact us for custom project</p>
+            <p>Choose any of the projects for reference</p>
+        </div>
 
-        <a target="_blank" class="cs_find_button "
-           href="https://www.linkedin.com/in/ugololeivanb381215b/">
-            <img class="cs_50" src="~/images/linkedIn.svg" />
-        </a>
+        <div class="col-md-3 ">
+            <h4 class="cs_black cs_bold">Contact Info</h4>
+            <p><i class="line-icon-map"></i>99 Conestoga residence, Canada, Ontario N2P-2N5</p>
+            <p><i class="line-icon-screen-smartphone"></i>+2-777-555-332 / -2-666-442-887</p>
+            <p><i class="line-icon-envelope-open"></i>ugoivan@gmail.com</p>
+            <p><i class="line-icon-calendar"></i>9am - 6 pm monday / saturday</p>
+        </div>
 
-        <a class="cs_find_button "
-           href="mailto:ugololeivan@yahoo.com?subject=hey,Ivan!!">
-            <img class="cs_50" src="~/images/email.svg" />
-        </a>
+        <div class="col-md-2 ">
+            <h4 class="cs_black cs_bold">Support</h4>
+            <p><a class="btn btn-danger cs_border_r20" asp-area="" asp-controller="TermsOfService" asp-action="TermsOfService">Terms of Services</a></p>
+            <p><a class="btn btn-danger cs_border_r20">Privacy Policy</a></p>
+            <p><a class="btn btn-danger cs_border_r20" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact us</a></p>
+        </div>
 
-        <a target="_blank" class="cs_find_button "
-           href="https://twitter.com/UgololeIvan">
-            <img class="cs_50" src="~/images/twitter.svg" />
-        </a>
+        <div class="col-md-4 ">
+            <h4 class="text-center cs_black cs_bold">Get In Touch</h4>
+            <div class="text-center ">
+
+                <!--<a target="_blank" class="cs_find_button "
+                   href="https://github.com/ugolole">
+                    <img class="cs_50" src="~/images/github.svg" />
+                </a>
+
+                <a target="_blank" class="cs_find_button "
+                   href="https://www.linkedin.com/in/ugololeivanb381215b/">
+                    <img class="cs_50" src="~/images/linkedIn.svg" />
+                </a>
+
+                <a class="cs_find_button "
+                   href="mailto:ugololeivan@yahoo.com?subject=hey,Ivan!!">
+                    <img class="cs_50" src="~/images/email.svg" />
+                </a>
+
+                <a target="_blank" class="cs_find_button "
+                   href="https://twitter.com/UgololeIvan">
+                    <img class="cs_50" src="~/images/twitter.svg" />
+                </a> -->
+
+                <a target="_blank" href="https://github.com/ugolole">
+                    <i class="cs_50 fa fa-github fa-3x" style="color:dimgrey"></i>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/ugololeivanb381215b/">
+                    <i class="cs_50 fa fa-linkedin fa-3x" style="color:dimgrey"></i>
+                </a>
+
+                <a target="_blank" href="mailto:ugololeivan@yahoo.com?subject=hey,Ivan!!">
+                    <i class="cs_50 fa fa-yahoo fa-3x" style="color:dimgrey"></i>
+                </a>
+
+                <a target="_blank" href="https://twitter.com/UgololeIvan">
+                    <i class="cs_50 fa fa-twitter fa-3x" style="color:dimgrey"></i>
+                </a>
+
+                <a target="_blank" href="https://www.facebook.com/SirDexterz">
+                    <i class="cs_50 fa fa-facebook fa-3x" style="color:dimgrey"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </footer>
+
 
 <environment include="Development">
     <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -60,6 +109,6 @@
 
 <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
 <script type="text/javascript">
-    SyntaxHighlighter.all()
+    SyntaxHighlighter.all();
 </script>
 
