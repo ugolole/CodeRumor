@@ -38,7 +38,11 @@
         @RenderBody() <!--Everything get rendered in here-->
     </div>
 
-    <partial name="_FooterTagsandScripts" />
+    <div class="cs_background_dark cs_top_bar_blue">
+        <div class="container">
+            <partial name="_FooterTagsandScripts" />
+        </div>
+    </div>
 
     @RenderSection("Scripts", required: false)
 

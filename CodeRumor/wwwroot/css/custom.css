@@ -1,6 +1,7 @@
 ﻿/*Custome File contains important code*/
-body{
-    margin-top:0px !important;
+body {
+    margin-top: 0px !important;
+    background-color:whitesmoke;
 }
 .inherit_size{
     width:inherit !important; 
@@ -279,7 +280,7 @@ body{
 }
 
 header {
-    background-image: url("../images/DarkImage.svg");
+    background-image: url("../images/dark-textures-6.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -357,6 +358,12 @@ header {
 .cs_white {
     color: white;
 }
+.cs_bg_grey{
+    background-color:whitesmoke;
+}
+.cs_bg_white{
+    background-color:white;
+}
 .cs_positionFixed {
     position: fixed;
     top: 50px;
@@ -373,11 +380,15 @@ header {
 .cs_background_dark {
     background-color: gainsboro;
 }
-.cs_bluetop_bar {
+.cs_top_bar_blue {
     border-top: #41c1f4 solid 5px;
 }
-.cs_bluebottom_bar{
+.cs_bottom_bar_blue{
     border-bottom: #41c1f4 solid 5px; 
+}
+
+.fa{
+    color: black;
 }
 
 .fa-github:hover {
@@ -385,19 +396,19 @@ header {
 }
 
 .fa-linkedin:hover {
-    color: black !important;
+    color: #0077B5 !important;
 }
 
 .fa-yahoo:hover {
-    color: black !important;
+    color: #430297 !important;
 }
 
 .fa-twitter:hover {
-    color: black !important;
+    color: #0084b4 !important;
 }
 
 .fa-facebook:hover {
-    color: black !important;
+    color: #3B5998 !important;
 }
 /* width */
 ::-webkit-scrollbar {
