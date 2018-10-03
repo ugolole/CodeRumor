@@ -22,7 +22,7 @@ var treeSketch = function (browser) {
         tree[0] = root;
         browser.frameRate(20);
 
-    }
+    };
 
     //create branches using a mouse event clicker.
     browser.runTree = function () {
@@ -46,7 +46,7 @@ var treeSketch = function (browser) {
                 }
             }
         }
-    }
+    };
 
     //create a draw function to draw values
     browser.draw = function () {
@@ -65,7 +65,7 @@ var treeSketch = function (browser) {
             leaves[i].y += browser.random(0, 2);
         }
 
-    }
+    };
 
     //this code below here acts like a class constructor
     browser.Branch = function (begin, end) {
@@ -76,13 +76,13 @@ var treeSketch = function (browser) {
         this.jitter = function () {
             this.end.x += browser.random(-1, 1);
             this.end.y += browser.random(-1, 1);
-        }
+        };
 
         this.show = function () {
             browser.stroke(0);
             browser.strokeWeight(5);
             browser.line(this.begin.x, this.begin.y, this.end.x, this.end.y);
-        }
+        };
 
         this.branchA = function () {
 
@@ -95,7 +95,7 @@ var treeSketch = function (browser) {
             var right = new browser.Branch(this.end, newEnd);
 
             return right;
-        }
+        };
 
         this.branchB = function () {
             var dir = p5.Vector.sub(this.end, this.begin);
@@ -107,10 +107,10 @@ var treeSketch = function (browser) {
             var right = new browser.Branch(this.end, newEnd);
 
             return right;
-        }
-    }
+        };
+    };
 
-}
+};
 
 function treeClick() {
     //add the sketch funtion into the p5 object
