@@ -34,14 +34,30 @@
         </div>
     </nav>
 
-    @RenderBody() <!--Everything get rendered in here-->
+    <div id="loader-wrapper">
+
+        <div id="loader">
+        </div>
+
+        <div class="loader-section section-left">
+        </div>
+
+        <div class="loader-section section-right">
+        </div>
+    </div>
+
+    <div id="content">
+        @RenderBody() <!--Everything get rendered in here-->
+    </div>
+
+    
 
     <div class="cs_background_dark cs_top_bar_blue">
         <div class="container">
             <partial name="_FooterTagsandScripts" />
         </div>
     </div>
-    
+
 
     @RenderSection("Scripts", required: false)
 

@@ -288,6 +288,7 @@ header {
     background-color: transparent;
     background: transparent;
     border-color: transparent;
+    z-index: 1 !important;
 }
 
 #nav.shrink {
@@ -305,6 +306,7 @@ header {
     background-color: black;
     opacity: 0.8;
     filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+    z-index: 1 !important;
 }
 
 
