@@ -9,7 +9,7 @@ namespace CodeRumor.Controllers
 {
     public class TermsOfServiceController : Controller
     {
-        public IActionResult TermsOfService()
+        public IActionResult TermsOfServiceMain()
         {
             NavigationIndicator active = new NavigationIndicator();
 
