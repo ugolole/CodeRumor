@@ -29,43 +29,46 @@
                 </a>
             </div>
 
-            <div class=" navbar-collapse collapse " id="bs-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Documentation")
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Documentation")
                          ? "active" : "")" asp-area="" asp-controller="Documentation" asp-action="DocumentationMain">Documentation</a>
-                    </li>
+                </li>
 
-                    <li>
-                        <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Projects")
+                <li>
+                    <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Projects")
                         ? "active" : "")" asp-area="" asp-controller="Projects" asp-action="ProjectsMain">Projects</a>
-                    </li>
+                </li>
 
-                    <li>
-                        <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Contact")
+                <li>
+                    <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Contact")
                         && (ViewContext.RouteData.Values["Action"].ToString() == "ContactMain") ? "active" : "")" asp-area="" asp-controller="Contact" asp-action="ContactMain">Contact</a>
-                    </li>
+                </li>
 
-                    <li>
-                        <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "TermsOfService")
+                <li>
+                    <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "TermsOfService")
                         && (ViewContext.RouteData.Values["Action"].ToString() == "TermsOfServiceMain") ? "active" : "")" asp-area="" asp-controller="TermsOfService" asp-action="TermsOfServiceMain">Terms Of Service</a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div id="loader-wrapper">
+    @if (ViewContext.RouteData.Values["Controller"].ToString() == "Home" &&
+     ViewContext.RouteData.Values["Action"].ToString() == "HomeMain")
+    { //The animation will only load in the home page.
+        <div id="loader-wrapper">
 
-        <div id="loader">
-        </div>
+            <div id="loader">
+            </div>
 
-        <div class="loader-section section-left">
-        </div>
+            <div class="loader-section section-left">
+            </div>
 
-        <div class="loader-section section-right">
+            <div class="loader-section section-right">
+            </div>
         </div>
-    </div>
+    }
+
 
     <div id="content">
         @RenderBody() <!--Everything get rendered in here-->
@@ -73,7 +76,7 @@
 
 
     @if (ViewContext.RouteData.Values["Controller"].ToString() == "Home" &&
-      ViewContext.RouteData.Values["Action"].ToString() == "HomeMain")
+     ViewContext.RouteData.Values["Action"].ToString() == "HomeMain")
     {
         <div class="cs_background_dark cs_top_bar_blue">
             <div class="container">
@@ -81,7 +84,7 @@
             </div>
         </div>
     }
-    else if (ViewContext.RouteData.Values["Controller"].ToString() == "Projects" )
+    else if (ViewContext.RouteData.Values["Controller"].ToString() == "Projects")
     {
         <div class="cs_background_dark cs_top_bar_blue">
             <div class="container">
