@@ -1,7 +1,7 @@
 ﻿// A $( document ).ready() block.
 $(document).ready(function () {
 
-    loading animations
+    //loading animations
     window.onload = function () {
         $('body').addClass('loaded');
         $('#loader').hide();
