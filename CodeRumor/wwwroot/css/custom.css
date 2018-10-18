@@ -280,8 +280,6 @@ body {
     background-color: black;
 }
 
-
-
 header {
     background-image: url("../images/dark-textures-6.jpg");
     height: 100vh;
@@ -360,20 +358,25 @@ header {
     .dropdown-menu a{
         margin-left:30px;
     }
+
 .cs_white {
     color: white;
 }
+
 .cs_bg_grey{
     background-color:whitesmoke;
 }
+
 .cs_bg_white{
     background-color:white;
 }
+
 .cs_positionFixed {
     position: fixed;
     top: 50px;
     display: block;
 }
+
 .no_style_li {
     list-style: none;
 }
@@ -385,9 +388,11 @@ header {
 .cs_background_dark {
     background-color: gainsboro;
 }
+
 .cs_top_bar_blue {
     border-top: #41c1f4 solid 5px;
 }
+
 .cs_bottom_bar_blue{
     border-bottom: #41c1f4 solid 5px; 
 }
