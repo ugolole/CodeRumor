@@ -275,6 +275,11 @@ body {
     border-bottom: 2px solid white !important;
 }
 
+/*This allows the nav collapsed version to be black enhancing visibility*/
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    background-color: black;
+}
+
 
 
 header {

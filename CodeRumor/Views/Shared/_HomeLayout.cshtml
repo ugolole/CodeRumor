@@ -22,7 +22,7 @@
                 @*@Model.Active("Home","HomeMain"); will be used to make the logic smaller*@
 
                 <!--This is webpage logo-->
-                <a id="home" class="navbar-brand cs_height_45
+                <a id="home" class="navbar-brand cs_height_45 
                    @( (ViewContext.RouteData.Values["Controller"].ToString() == "Home")
                         && (ViewContext.RouteData.Values["Action"].ToString() == "HomeMain") ? "active" : "")" asp-area="" asp-controller="Home" asp-action="HomeMain">
                     [CODE] rumor
@@ -30,7 +30,7 @@
                 </a>
             </div>
 
-            <div class="cs_background_dark navbar-collapse" id="navbar-collapse">
+            <div class=" navbar-collapse collapse " id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="cs_height_45 @((ViewContext.RouteData.Values["Controller"].ToString() == "Documentation")
