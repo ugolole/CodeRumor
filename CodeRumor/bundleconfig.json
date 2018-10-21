@@ -328,5 +328,11 @@
     "inputFiles": [
       "wwwroot/lib/syntaxhighlighter-3.0.83/scripts/shLegacy.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/loader.min.css",
+    "inputFiles": [
+      "wwwroot/css/loader.css"
+    ]
   }
 ]

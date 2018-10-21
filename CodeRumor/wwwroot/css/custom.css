@@ -275,6 +275,11 @@ body {
     border-bottom: 2px solid white !important;
 }
 
+/*This allows the nav collapsed version to be black enhancing visibility*/
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    background-color: black;
+}
+
 header {
     background-image: url("../images/dark-textures-6.jpg");
     height: 100vh;
@@ -286,6 +291,7 @@ header {
     background-color: transparent;
     background: transparent;
     border-color: transparent;
+    z-index: 1 !important;
 }
 
 #nav.shrink {
@@ -303,6 +309,7 @@ header {
     background-color: black;
     opacity: 0.8;
     filter: alpha(opacity=50) !important; /* Change background to black on scroll*/
+    z-index: 1 !important;
 }
 
 
@@ -351,20 +358,25 @@ header {
     .dropdown-menu a{
         margin-left:30px;
     }
+
 .cs_white {
     color: white;
 }
+
 .cs_bg_grey{
     background-color:whitesmoke;
 }
+
 .cs_bg_white{
     background-color:white;
 }
+
 .cs_positionFixed {
     position: fixed;
     top: 50px;
     display: block;
 }
+
 .no_style_li {
     list-style: none;
 }
@@ -376,9 +388,11 @@ header {
 .cs_background_dark {
     background-color: gainsboro;
 }
+
 .cs_top_bar_blue {
     border-top: #41c1f4 solid 5px;
 }
+
 .cs_bottom_bar_blue{
     border-bottom: #41c1f4 solid 5px; 
 }

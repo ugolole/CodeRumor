@@ -1,27 +1,30 @@
 ﻿@{
     ViewData["Title"] = "Projects";
-    Layout = "_ProjectsLayout";
+    Layout = "_HomeLayout";
 }
 
 <partial name="_Scripts" />
 
-<!--Page animation -->
-<script type="text/javascript" src="~/js/Animations.min.js"></script>
+<div class="container">
+    <!--Page animation -->
+    <script type="text/javascript" src="~/js/Animations.min.js"></script>
 
-<h1 class="cs_margin_top70">@ViewData["Title"]</h1>
+    <h1 class="cs_margin_top70">@ViewData["Title"]</h1>
 
-<div class="  text-center  ">
+    <div class="  text-center  ">
 
-    <a class=" cs_shadow cs_extended_shadow cs_a cs_border_r10 cs_project_LH cs_magY40 cs_bg_white cs_top_bar_blue cs_bottom_bar_blue cs_magX40"
-       asp-controller="Projects" asp-action="JavaScript">
-        <h1>JavaScript Animations</h1>
-    </a>
+        <a class=" cs_shadow cs_extended_shadow cs_a cs_border_r10 cs_project_LH cs_magY40 cs_bg_white cs_top_bar_blue cs_bottom_bar_blue cs_magX40"
+           asp-controller="Projects" asp-action="JavaScript">
+            <h1>JavaScript Animations</h1>
+        </a>
 
-    <a class=" cs_shadow cs_extended_shadow cs_a cs_border_r10  cs_project_LH cs_magY40 cs_bg_white cs_top_bar_blue cs_bottom_bar_blue cs_magX40">
-        <h1>Android Projects</h1>
-    </a>
+        <a class=" cs_shadow cs_extended_shadow cs_a cs_border_r10  cs_project_LH cs_magY40 cs_bg_white cs_top_bar_blue cs_bottom_bar_blue cs_magX40">
+            <h1>Android Projects</h1>
+        </a>
 
+    </div>
 </div>
+
 
 
 

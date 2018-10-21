@@ -1,6 +1,12 @@
 ﻿// A $( document ).ready() block.
 $(document).ready(function () {
 
+    //loading animations
+    window.onload = function () {
+        $('body').addClass('loaded');
+        $('#loader').hide();
+    };
+    
     //change the color of nav bar when scrolling.
     $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
