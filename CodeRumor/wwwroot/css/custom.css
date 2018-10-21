@@ -1,11 +1,16 @@
 ﻿/*Custome File contains important code*/
 body {
     margin-top: 0px !important;
-    background-color:whitesmoke;
+    background-image: url("../images/patter_backgroundImage.jpg");
+    background-attachment: fixed;
 }
 .inherit_size{
     width:inherit !important; 
     height:inherit !important;
+}
+
+.cs_inline_flex{
+    display:inline-flex;
 }
 
 .cs_navbar_right {
