@@ -9,8 +9,8 @@ body {
     height:inherit !important;
 }
 
-.cs_inline_flex{
-    display:inline-flex;
+.cs_inline_block{
+    display:inline-block;
 }
 
 .cs_navbar_right {
