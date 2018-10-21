@@ -183,6 +183,7 @@ body {
     cursor:pointer !important;
 }
 
+/*larger shadows.*/
 .cs_extended_shadow:hover {
     box-shadow: 0px 0px 30px #808080;
 }
@@ -282,7 +283,7 @@ body {
 
 /*This allows the nav collapsed version to be black enhancing visibility*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-    background-color: black;
+    
 }
 
 header {
