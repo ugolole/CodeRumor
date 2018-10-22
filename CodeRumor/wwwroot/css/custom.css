@@ -261,8 +261,6 @@ body {
     border-bottom: 3px solid white !important;
 }
 
-
-
 .homeSouth {
     text-align: center;
     position: absolute;
@@ -273,21 +271,17 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     border-bottom: 2px solid white !important;
 }
+
 .hoverA:hover {
-    border-bottom: 2px solid white !important;
+    border-bottom: 3px solid white !important;
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-    border-bottom: 2px solid white !important;
-}
-
-/*This allows the nav collapsed version to be black enhancing visibility*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-    
+    border-bottom: 3px solid white !important;
 }
 
 header {
-    background-image: url("../images/dark-textures-6.jpg");
+    background-image: url("../images/Dark_blue_background.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -545,7 +539,7 @@ header {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     #bs-navbar-collapse-1 {
         background-color: black;
         opacity: 0.9;
@@ -589,6 +583,17 @@ header {
     /*Display the second menu*/
     .hideWhenBig-menu{
         display: block;
+    }
+
+    /*make the drop down menue more visible*/
+    /*This allows the nav collapsed version to be black enhancing visibility*/
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        background-color: black;
+        border: 3px solid black;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        display: inline-block;
     }
 }
 
