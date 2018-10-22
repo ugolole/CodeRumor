@@ -287,6 +287,11 @@ header {
     background-position: center;
 }
 
+.cs_footer{
+    position:relative;
+    bottom: 0px;
+}
+
 #nav {
     background-color: transparent;
     background: transparent;
