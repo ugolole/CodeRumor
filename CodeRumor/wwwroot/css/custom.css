@@ -268,8 +268,9 @@ body {
     top: calc(100% - 120px);
 }
 
+/*The size of the white bar under nav menu*/
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    border-bottom: 2px solid white !important;
+    border-bottom: 3px solid white !important;
 }
 
 .hoverA:hover {
