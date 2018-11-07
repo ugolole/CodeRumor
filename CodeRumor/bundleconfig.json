@@ -340,5 +340,11 @@
     "inputFiles": [
       "wwwroot/lib/thickBox/thickbox.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/thickBox/thickbox.min.css",
+    "inputFiles": [
+      "wwwroot/lib/thickBox/thickbox.css"
+    ]
   }
 ]
