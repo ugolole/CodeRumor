@@ -334,5 +334,11 @@
     "inputFiles": [
       "wwwroot/css/loader.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/thickBox/thickbox.min.js",
+    "inputFiles": [
+      "wwwroot/lib/thickBox/thickbox.js"
+    ]
   }
 ]
