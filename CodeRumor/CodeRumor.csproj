@@ -42,10 +42,10 @@
     <Content Update="Views\Documentation\CSharp\content\_section1.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\Projects\WebAnimations\_P5Js.cshtml">
+    <Content Update="Views\Projects\WebAnimations\P5Js\_P5Js.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\Projects\WebAnimations\_ThreeJs.cshtml">
+    <Content Update="Views\Projects\WebAnimations\ThreeJs\_ThreeJs.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Projects\_nav.cshtml">
