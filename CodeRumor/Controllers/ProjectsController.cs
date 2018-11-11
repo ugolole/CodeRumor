@@ -16,18 +16,6 @@ namespace CodeRumor.Controllers
             return View(active);
         }
 
-        //open up java script based projects
-        public IActionResult JavaScript()
-        {
-            return View(active);
-        }
-
-        //open up the growing tree example
-        public IActionResult JSGrowingTree()
-        {
-            return View(active);
-        }
-
         //return the intro partial view
         public IActionResult Intro()
         {
