@@ -1,11 +1,16 @@
 ﻿/*Custome File contains important code*/
 body {
     margin-top: 0px !important;
-    background-color:whitesmoke;
+    background-image: url("../images/patter_backgroundImage.jpg");
+    background-attachment: fixed;
 }
 .inherit_size{
     width:inherit !important; 
     height:inherit !important;
+}
+
+.cs_inline_block{
+    display:inline-block;
 }
 
 .cs_navbar_right {
@@ -178,6 +183,7 @@ body {
     cursor:pointer !important;
 }
 
+/*larger shadows.*/
 .cs_extended_shadow:hover {
     box-shadow: 0px 0px 30px #808080;
 }
@@ -188,11 +194,30 @@ body {
 }
 
 /*Used to display both the height and width of the individual project*/
-.cs_project_LH{
-    width:430px;
-    height:430px;
+.cs_project_LH {
+    width: 430px;
+    height: 430px;
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+
+
+.cs_project_MD {
+    width: 330px;
+    height: 330px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.cs_project_SM {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
 }
 
 .cs_project_all {
@@ -255,8 +280,6 @@ body {
     border-bottom: 3px solid white !important;
 }
 
-
-
 .homeSouth {
     text-align: center;
     position: absolute;
@@ -264,27 +287,29 @@ body {
     top: calc(100% - 120px);
 }
 
+/*The size of the white bar under nav menu*/
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    border-bottom: 2px solid white !important;
+    border-bottom: 3px solid white !important;
 }
+
 .hoverA:hover {
-    border-bottom: 2px solid white !important;
+    border-bottom: 3px solid white !important;
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-    border-bottom: 2px solid white !important;
-}
-
-/*This allows the nav collapsed version to be black enhancing visibility*/
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-    background-color: black;
+    border-bottom: 3px solid white !important;
 }
 
 header {
-    background-image: url("../images/dark-textures-6.jpg");
+    background-image: url("../images/Dark_blue_background.jpg");
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+.cs_footer{
+    position:relative;
+    bottom: 0px;
 }
 
 #nav {
@@ -499,6 +524,25 @@ header {
             border-bottom: 3px solid black !important;
         }
 
+@media (max-width: 1253px){
+    .cs_project_LH {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_MD {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_SM {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 991px) {
 
     .cs_large {
@@ -510,7 +554,21 @@ header {
     }
 
     .cs_project_LH {
-        width: 80%;
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_MD {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_SM {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .cs_project_all {
@@ -539,7 +597,7 @@ header {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     #bs-navbar-collapse-1 {
         background-color: black;
         opacity: 0.9;
@@ -564,7 +622,8 @@ header {
 
     /*When the screen size drops hide the vertical menu*/
     .vertical-menu{
-        display:none;
+        visibility: hidden;
+        /*display:none;*/
     }
 
     /*Used to the documentation*/
@@ -583,6 +642,17 @@ header {
     /*Display the second menu*/
     .hideWhenBig-menu{
         display: block;
+    }
+
+    /*make the drop down menue more visible*/
+    /*This allows the nav collapsed version to be black enhancing visibility*/
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        background-color: black;
+        border: 3px solid black;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        display: inline-block;
     }
 }
 
@@ -612,7 +682,21 @@ header {
     }
 
     .cs_project_LH {
-        width: 80%;
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_MD {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_SM {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
     }
 
 }

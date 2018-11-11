@@ -16,16 +16,24 @@ namespace CodeRumor.Controllers
             return View(active);
         }
 
-        //open up java script based projects
-        public IActionResult JavaScript()
+        //return the intro partial view
+        public IActionResult Intro()
         {
-            return View(active);
+            return PartialView("/Views/Projects/_Intro.cshtml");
         }
 
-        //open up the growing tree example
-        public IActionResult JSGrowingTree()
+        //return a partial view
+        public ActionResult ThreeJs()
         {
-            return View(active);
+            return PartialView("/Views/Projects/WebAnimations/_ThreeJs.cshtml");
         }
+
+        //return a partial view for p5js
+        public IActionResult P5Js()
+        {
+            return PartialView("/Views/Projects/WebAnimations/_P5JS.cshtml");
+        }
+
+        
     }
 }
