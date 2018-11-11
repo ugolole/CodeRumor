@@ -34,6 +34,11 @@ namespace CodeRumor.Controllers
             return PartialView("/Views/Projects/WebAnimations/P5Js/_P5JS.cshtml");
         }
 
+        public IActionResult Test()
+        {
+            return PartialView("/Views/Projects/WebAnimations/ThreeJs/_TestFile.cshtml");
+        }
+
         
     }
 }

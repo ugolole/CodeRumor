@@ -45,6 +45,9 @@
     <Content Update="Views\Projects\WebAnimations\P5Js\_P5Js.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+    <Content Update="Views\Projects\WebAnimations\ThreeJs\_TestFile.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Projects\WebAnimations\ThreeJs\_ThreeJs.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
