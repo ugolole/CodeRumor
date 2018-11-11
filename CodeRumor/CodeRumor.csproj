@@ -14,6 +14,7 @@
     <Folder Include="Views\Documentation\NodeJS\content\" />
     <Folder Include="Views\Documentation\NodeJS\images\" />
     <Folder Include="Views\Documentation\NodeJS\navigation\" />
+    <Folder Include="Views\Projects\Android\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +40,18 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Documentation\CSharp\content\_section1.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Projects\WebAnimations\_P5Js.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Projects\WebAnimations\_ThreeJs.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Projects\_nav.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Projects\_Intro.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

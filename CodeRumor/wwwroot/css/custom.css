@@ -194,11 +194,30 @@ body {
 }
 
 /*Used to display both the height and width of the individual project*/
-.cs_project_LH{
-    width:430px;
-    height:430px;
+.cs_project_LH {
+    width: 430px;
+    height: 430px;
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+
+
+.cs_project_MD {
+    width: 330px;
+    height: 330px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+.cs_project_SM {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
 }
 
 .cs_project_all {
@@ -505,6 +524,25 @@ header {
             border-bottom: 3px solid black !important;
         }
 
+@media (max-width: 1253px){
+    .cs_project_LH {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_MD {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_SM {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 991px) {
 
     .cs_large {
@@ -516,7 +554,21 @@ header {
     }
 
     .cs_project_LH {
-        width: 80%;
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_MD {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_SM {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .cs_project_all {
@@ -570,7 +622,8 @@ header {
 
     /*When the screen size drops hide the vertical menu*/
     .vertical-menu{
-        display:none;
+        visibility: hidden;
+        /*display:none;*/
     }
 
     /*Used to the documentation*/
@@ -629,7 +682,21 @@ header {
     }
 
     .cs_project_LH {
-        width: 80%;
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_MD {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .cs_project_SM {
+        width: 80% !important;
+        height: auto;
+        margin-bottom: 50px;
     }
 
 }

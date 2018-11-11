@@ -41,7 +41,6 @@ $(document).ready(function () {
         
     });
 
-  
     //two
     $('a[name="DOCHeader_menu2"]').click(function () {
         $('html, body').animate({
@@ -78,6 +77,7 @@ $(document).ready(function () {
         $(this).addClass('active'); 
     });
 
+    //five
     $('a[name="DOCHeader_menu5"]').click(function () {
         $('html, body').animate({
             scrollTop: $('a[name="DOCHeader5"]').offset().top - 50
@@ -89,6 +89,7 @@ $(document).ready(function () {
         $(this).addClass('active'); 
     });
 
+    //six
     $('a[name="DOCHeader_menu6"]').click(function () {
         $('html, body').animate({
             scrollTop: $('a[name="DOCHeader6"]').offset().top - 50
@@ -100,6 +101,7 @@ $(document).ready(function () {
         $(this).addClass('active'); 
     });
 
+    //seven
     $('a[name="DOCHeader_menu7"]').click(function () {
         $('html, body').animate({
             scrollTop: $('a[name="DOCHeader7"]').offset().top - 50
@@ -111,6 +113,7 @@ $(document).ready(function () {
         $(this).addClass('active'); 
     });
 
+    //eight
     $('a[name="DOCHeader_menu8"]').click(function () {
         $('html, body').animate({
             scrollTop: $('a[name="DOCHeader8"]').offset().top - 50
@@ -138,7 +141,6 @@ $(document).ready(function () {
         $(this).addClass('active');
 
     });
-
 
     //two
     $('a[name="TERMsHeader_menu2"]').click(function () {

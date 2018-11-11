@@ -27,5 +27,25 @@ namespace CodeRumor.Controllers
         {
             return View(active);
         }
+
+        //return the intro partial view
+        public IActionResult Intro()
+        {
+            return PartialView("/Views/Projects/_Intro.cshtml");
+        }
+
+        //return a partial view
+        public ActionResult ThreeJs()
+        {
+            return PartialView("/Views/Projects/WebAnimations/_ThreeJs.cshtml");
+        }
+
+        //return a partial view for p5js
+        public IActionResult P5Js()
+        {
+            return PartialView("/Views/Projects/WebAnimations/_P5JS.cshtml");
+        }
+
+        
     }
 }

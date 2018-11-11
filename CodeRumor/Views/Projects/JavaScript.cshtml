@@ -1,13 +1,8 @@
 ﻿
-@{
-    ViewData["Title"] = "Animations ";
-    Layout = "_HomeLayout";
-}
 
 <partial name="_Scripts" />
 
 <div class="container">
-    <h1 class="cs_margin_top70">@ViewData["Title"]</h1>
     <!--Page animation for growing trees-->
     <script type="text/javascript" src="~/js/Animations.min.js"></script>
 
@@ -17,7 +12,7 @@
             <h1>Growing Tree</h1>
             <div id="container" style="width:inherit; height:300px" class=""></div>
             <button class="btn btn-primary" onclick="treeClick();">Run</button>
-            <a class="thickbox">Testing Functionality of thick box </a>
+
             <a class="btn btn-primary" asp-controller="Projects" asp-action="JSGrowingTree">Want to Learn More</a>
         </div>
 

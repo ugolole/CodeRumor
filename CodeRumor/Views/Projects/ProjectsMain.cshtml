@@ -3,26 +3,82 @@
     Layout = "_HomeLayout";
 }
 
-<partial name="_Scripts" />
+<partial name="/Views/Projects/_Scripts.cshtml" />
 
-<div class="container">
-    <!--Page animation -->
-    <script type="text/javascript" src="~/js/Animations.min.js"></script>
-
-    <div class=" cs_margin_top70 text-center  ">
-
-        <a class=" cs_shadow cs_extended_shadow cs_a cs_border_r10 cs_project_LH cs_magY40 cs_bg_white cs_top_bar_blue cs_bottom_bar_blue cs_magX40"
-           asp-controller="Projects" asp-action="JavaScript">
-            <h1>JavaScript Animations</h1>
-        </a>
-
-        <a class=" cs_shadow cs_extended_shadow cs_a cs_border_r10  cs_project_LH cs_magY40 cs_bg_white cs_top_bar_blue cs_bottom_bar_blue cs_magX40">
-            <h1>Android Projects</h1>
-        </a>
-
+<div class="cs_magY50 ">
+    <!--The large screen side menu-->
+    <div class="vertical-menu cs_white">
+        <ul class="no_style_li">
+            <!--The navigation for web application -->
+            <partial name="/Views/Projects/_nav.cshtml" />
+        </ul>
     </div>
+    
+    <!--The small screen alternative top menu-->
+    <div class="row documentationContent">
+        <div class="hideWhenBig-menu dropdown-menu-right col-sm-12 cs_magTY20">
+            <button class="btn btn-basic cs_p15 dropdown" type="button" data-toggle="dropdown" style="width:100%; height:50px;">
+                Table of Contents <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-center no_style_li cs_darkBackGround">
+                <!--The navigation for web application -->
+                <partial name="/Views/Projects/_nav.cshtml" />
+            </ul>
+        </div>
+    </div>
+
+    <!--Used to switch content.-->
+    <div id="detailsDiv">
+        <partial name="/views/Projects/_Intro.cshtml" />
+    </div>
+
 </div>
 
+<!--Footer used by the page-->
+<div class="row footerContent cs_top_bar_blue">
+    <partial name="_FooterTagsandScripts" />
+</div>
+
+<!--Ajax Navigation script -->
+<script type="text/javascript">
+    $('a[name="intro"] ').addClass('active');
+    
+      //switch to the intro
+    $('a[name=intro] ').click(function () {
+        $("#detailsDiv").load('@Url.Action("Intro","Projects")');
+
+        //remove other active members
+        $('li a.menu').removeClass('active');
+
+        //add the active class to show where we are
+        $(this).addClass('active');
+    });
+
+    //Switch to threeJS animations
+    $('a[name="threeJs"] ').click(function () {
+        $("#detailsDiv").load('@Url.Action("ThreeJs","Projects")');
+
+        //remove other active members
+        $('li a.menu').removeClass('active');
+
+        //add the active class to show where we are
+        $(this).addClass('active');
+
+    });
+
+    //Switch to P5Js animations
+    $('a[name="P5Js"] ').click(function () {
+        $("#detailsDiv").load('@Url.Action("P5Js", "Projects")');
+
+        //remove other active members
+        $('li a.menu').removeClass('active');
+
+        //add the active class to show where we are
+        $(this).addClass('active');
+
+    });
+
+</script>
 
 
 
