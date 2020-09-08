@@ -29,7 +29,7 @@
 
     <!--Used to switch content.-->
     <div id="detailsDiv">
-        <partial name="/views/Projects/_Intro.cshtml" />
+        <partial name="/views/Projects/_Intro.cshtml" /> 
     </div>
 
 </div>
@@ -45,7 +45,7 @@
     
       //switch to the intro
     $('a[name=intro] ').click(function () {
-        $("#detailsDiv").load('@Url.Action("Intro","Projects")');
+        $("#detailsDiv").load('@Url.Action("Intro","Projects")'); //"Action" , "Controller"
 
         //remove other active members
         $('li a.menu').removeClass('active');
@@ -56,7 +56,7 @@
 
     //Switch to threeJS animations
     $('a[name="threeJs"] ').click(function () {
-        $("#detailsDiv").load('@Url.Action("ThreeJs","Projects")');
+        $("#detailsDiv").load('@Url.Action("ThreeJs","Projects")'); //"Action" , "Controller"
 
         //remove other active members
         $('li a.menu').removeClass('active');
@@ -68,7 +68,7 @@
 
     //Switch to P5Js animations
     $('a[name="P5Js"] ').click(function () {
-        $("#detailsDiv").load('@Url.Action("P5Js", "Projects")');
+        $("#detailsDiv").load('@Url.Action("P5Js", "Projects")'); //"Action" , "Controller"
 
         //remove other active members
         $('li a.menu').removeClass('active');
