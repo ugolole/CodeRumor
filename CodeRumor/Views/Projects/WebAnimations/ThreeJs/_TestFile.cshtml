@@ -1,0 +1,196 @@
+﻿
+@*<p>This works well but need more improvement</p>
+<div>
+    <div id="myCanvas">
+    </div>
+
+</div>
+<script>
+
+    //This technique of using FBX to load animation does not support animation sequences.
+
+    if (WEBGL.isWebGLAvailable() === false) {
+
+        document.body.appendChild(WEBGL.getWebGLErrorMessage());
+
+    }
+
+    var container, stats, controls;
+    var camera, scene, renderer, light, objectStore, pointLight;
+
+    var clock = new THREE.Clock();
+
+    //mixers
+    var mixers = [];
+
+    //read the avatar scene and camera
+    init();
+
+    //run the avatar by calling animate.
+    animate(0);
+
+    //initialise the work environment.
+    function init(value) {
+
+        container = document.createElement('div');
+        document.body.appendChild(container);
+
+        //create new camera.
+        camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);
+        camera.position.set(100, 100, 500); // x, y, z
+
+        controls = new THREE.OrbitControls(camera); //set the controls to the camera.
+        controls.target.set(0, 100, 0); //set the position of the obital controls.
+        controls.update();
+
+
+        //create a scene with fog
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xffffff); //make the background white
+        //scene.fog = new THREE.Fog( 0xa0a0a0, 200, 1000 );
+
+        light = new THREE.HemisphereLight(0xffffff, 0x444444); //top color, bottom color
+        light.position.set(80, 200, 0);
+        scene.add(light);
+
+        //using directional light to create a shodow
+        light = new THREE.DirectionalLight(0xffffff, 2);
+        light.position.set(180, 200, 0); // x, y, z
+        light.castShadow = true;
+        light.shadow.camera.top = 300;
+        light.shadow.camera.bottom = -350;
+        light.shadow.camera.left = -350;
+        light.shadow.camera.right = 350;
+
+        //allow you to see how the shadow get cast hence improving the overrall
+        //appearance.
+        //scene.add( new THREE.CameraHelper( light.shadow.camera ) );
+
+        scene.add(light);
+
+        // ground using plane geometry
+        var mesh = new THREE.Mesh(new THREE.PlaneBufferGeometry(2000, 2000), new THREE.MeshPhongMaterial({ color: 0x9a9ca0, depthWrite: false }));
+        mesh.position.set(0, 0, 0);
+        mesh.rotation.x = - Math.PI / 2;
+        mesh.receiveShadow = true;
+        scene.add(mesh);
+
+        //Load the FBX file and set the mixer for this given animation.
+
+        var fbxFile = new THREE.FBXLoader();
+        fbxFile.load('deer.fbx', function (object) {
+            objectStore = object;
+            objectStore.position.y = 0;
+            objectStore.position.x = 0;
+            objectStore.position.z = 0;
+
+            //Animation Mixer is used as a player for the animations on a particular object.
+            //the object is the fbx file containing different animation clips
+            objectStore.mixer = new THREE.AnimationMixer(object);
+
+            //Extrating the mixter from the object.
+            mixers.push(objectStore.mixer); //add object mixer into mixers array.
+
+            playAnimation(0);
+
+            //add more appearence settings to the fbx.
+            objectStore.traverse(function (child) {
+
+                if (child.isMesh) { //check if the object has a mesh.
+                    child.castShadow = true; //cast shodow on the avatar
+                    child.receiveShadow = true; //allow the avatar to recieve shadow.
+                }
+
+            });
+
+            scene.add(objectStore);// add object obtained from FBXLoader to the scene
+
+        });
+
+        renderer = new THREE.WebGLRenderer({ antialias: true }); //allows the images to be rendered much clearly
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        container.appendChild(renderer.domElement);
+
+        //the window listens for the moment the screen size is reduced.
+        window.addEventListener('resize', onWindowResize, false);
+
+        // stats
+        stats = new Stats();
+        container.appendChild(stats.dom); // add the dom element that shows stats
+
+    }
+
+    //The mixer contians all the actions needed to play the animation.
+    function stopAnimation() {
+        var action = objectStore.mixer;
+        action.stopAllAction();
+    }
+
+    //select animation for playing.
+    function playAnimation(value) {
+        stopAnimation(); //stop the previous animation first then play the new one.
+
+        if (value < objectStore.animations.length) {
+            //fadeIn increase the weight of the acion from 0 to 1 within the passed time interval.
+            //clipAction returns AnimationAction or the passed clip
+            var action = objectStore.mixer.clipAction(objectStore.animations[value]).fadeIn(0);
+
+            action.play(); //play is an AnimationAction method used to play
+        } else {
+            //fadeIn increase the weight of the acion from 0 to 1 within the passed time interval.
+            //clipAction returns AnimationAction or the passed clip
+            var action = objectStore.mixer.clipAction(objectStore.animations[0]).fadeIn(0);
+
+            action.play(); //play is an AnimationAction method used to play
+        }
+
+
+    }
+
+    //start the animation sequence.
+    function animate(value) {
+
+        requestAnimationFrame(animate);
+
+        if (mixers.length > 0) {
+            for (var i = 0; i < mixers.length; i++) {
+                mixers[i].update(clock.getDelta()); //getDelta get the seconds that have passed
+            }
+        }
+
+        renderer.render(scene, camera);
+        // stats
+        stats.update();
+    }
+
+
+    //add responsiveness to the avatar
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+
+    function update(data_obj) {
+
+        // update speed
+        if (data_obj.speed || data_obj.speed === 0) {
+            var speed = data_obj.speed;
+            mixers.forEach(function (mixer) { //inside mixers there is a mixer whose time we are affecting.
+                mixer.timeScale = speed;
+            });
+        }
+
+        // update the animation
+        if (data_obj.action || data_obj.action === 0) {
+            var action = data_obj.action;
+            playAnimation(action);
+        }
+
+    }
+
+
+</script>*@

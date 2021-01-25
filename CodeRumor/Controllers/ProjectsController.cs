@@ -25,13 +25,18 @@ namespace CodeRumor.Controllers
         //return a partial view
         public ActionResult ThreeJs()
         {
-            return PartialView("/Views/Projects/WebAnimations/_ThreeJs.cshtml");
+            return PartialView("/Views/Projects/WebAnimations/ThreeJs/_ThreeJs.cshtml");
         }
 
         //return a partial view for p5js
         public IActionResult P5Js()
         {
-            return PartialView("/Views/Projects/WebAnimations/_P5JS.cshtml");
+            return PartialView("/Views/Projects/WebAnimations/P5Js/_P5JS.cshtml");
+        }
+
+        public IActionResult Test()
+        {
+            return PartialView("/Views/Projects/WebAnimations/ThreeJs/_TestFile.cshtml");
         }
 
         

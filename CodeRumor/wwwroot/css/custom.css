@@ -404,6 +404,7 @@ header {
 
 .no_style_li {
     list-style: none;
+    padding-left: 40px;
 }
 
 .position {
